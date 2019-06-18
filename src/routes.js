@@ -1,6 +1,7 @@
 import Home from './components/Home.vue';
 import HtmlTemplate from './components/HtmlTemplate.vue';
 import Lifecycle from './components/Lifecycle.vue';
+import ComputedWatch from './components/ComputedWatch.vue';
 
 const routes = [
     {
@@ -14,6 +15,10 @@ const routes = [
     {
         path: '/lifecycle',
         component: Lifecycle
+    },
+    {
+        path: '/computedWatch',
+        component: ComputedWatch
     }
 ]
 

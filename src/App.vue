@@ -8,6 +8,7 @@
       <router-link to="/">Home </router-link>
       <router-link to="/htmlTemplate">HtmlTemplate </router-link>
       <router-link to="/lifecycle">lifecycle </router-link>
+      <router-link to="/computedWatch">ComputedWatch </router-link>
     </nav>
     <!-- Routes rendered here -->
     <router-view />
