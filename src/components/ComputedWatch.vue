@@ -1,28 +1,31 @@
 <template>
     <div>
-        <h1>{{ message }}</h1>
-        <h1>{{ reversedMessage }}</h1>
-        <p>{{ count }}</p>
-        <p>{{ now }}</p>
+        <p>count: {{ count }}</p>
+        <p>second: {{ secondCount }}</p>
+        <p>computed: {{ double }}</p>
+        <p>methods: {{ triple() }}</p>
+        <button v-on:click="count ++">count+1</button>
+        <button v-on:click="secondCount ++">secondCount+1</button>
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            message: '안녕하세요',
-            items: [1, 2, 3]
+            count: 0,
+            secondCount: 0
         }
     },
     computed: {
-        reversedMessage: function() {
-            return this.message.split('').reverse().join('')
-        },
-        count: function() {
-            return 'The count is ' + this.items.length * 10
-        },
-        now: function() {
-            return Date.now()
+        double: function() {
+            console.log('computed double')
+            return this.count * 2
+        }
+    },
+    methods: {
+        triple: function() {
+            console.log('methods triple')
+            return this.count * 3
         }
     }
 }
