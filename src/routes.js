@@ -1,7 +1,8 @@
 import Home from './components/Home.vue';
-import HtmlTemplate from './components/HtmlTemplate.vue';
-import Lifecycle from './components/Lifecycle.vue';
-import ComputedWatch from './components/ComputedWatch.vue';
+import About from './components/About.vue';
+import Skills from './components/Skills.vue';
+import Project from './components/Project.vue';
+import Contact from './components/Contact.vue';
 
 const routes = [
     {
@@ -9,16 +10,20 @@ const routes = [
         component: Home
     },
     {
-        path: '/htmlTemplate',
-        component: HtmlTemplate
+        path: '/About',
+        component: About
     },
     {
-        path: '/lifecycle',
-        component: Lifecycle
+        path: '/Skills',
+        component: Skills
     },
     {
-        path: '/computedWatch',
-        component: ComputedWatch
+        path: '/Project',
+        component: Project
+    },
+    {
+        path: '/Contact',
+        component: Contact
     }
 ]
 

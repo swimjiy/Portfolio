@@ -8,9 +8,28 @@ Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 
+const scrollBehavior = function (to, from, savedPosition) {
+  if (savedPosition){
+    return savedPosition
+  } else {
+    const position = {}
+
+    if (to.hash) {
+      position.selector = to.hash
+
+      if (to.hash === "about") {
+        position.offset = { y: 100 }
+      }
+
+      return false
+    }
+  }
+}
+
 const router = new VueRouter({
   mode: "history",
-  routes: routes
+  routes: routes,
+  scrollBehavior
 });
 
 new Vue({

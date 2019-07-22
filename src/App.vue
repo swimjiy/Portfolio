@@ -6,9 +6,10 @@
     <!-- Router Link -->
     <nav id="nav">
       <router-link to="/">Home </router-link>
-      <router-link to="/htmlTemplate">HtmlTemplate </router-link>
-      <router-link to="/lifecycle">lifecycle </router-link>
-      <router-link to="/computedWatch">ComputedWatch </router-link>
+      <router-link to="/About">About </router-link>
+      <router-link to="/Skills">Skills </router-link>
+      <router-link to="/Project">Project </router-link>
+      <router-link to="/Contact">Contact </router-link>
     </nav>
     <!-- Routes rendered here -->
     <router-view />
