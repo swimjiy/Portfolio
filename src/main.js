@@ -23,6 +23,16 @@ const scrollBehavior = function (to, from, savedPosition) {
 
       return false
     }
+
+    return new Promise(resolve => {
+      if (to.matched.some(m => m.meta.scrollToTop)) {
+        position.x = 0
+        position.y = 0
+      }
+      this.app.$root.$once('triggerScroll', () => {
+        resolve(position)
+      })
+    })
   }
 }
 

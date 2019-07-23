@@ -7,7 +7,8 @@ import Contact from './components/Contact.vue';
 const routes = [
     {
         path: '/',
-        component: Home
+        component: Home,
+        meta: {scrollToTop: true}
     },
     {
         path: '/About',

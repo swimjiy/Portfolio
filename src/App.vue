@@ -12,13 +12,20 @@
       <router-link to="/Contact">Contact </router-link>
     </nav>
     <!-- Routes rendered here -->
-    <router-view />
+    <transition name="fade" mode="out-in" @after-leave="afterLeave">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
 
 export default {
+  methods: {
+    afterLeave () {
+      this.$root.$emit('triggerScroll')
+    }
+  }
 }
 </script>
 
