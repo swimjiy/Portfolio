@@ -4,10 +4,16 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <h1>Vue Ex</h1> -->
     <!-- Router Link -->
+    <slidebarMenu
+      :width="300"
+      :links="[
+        {'id': 1, 'text': 'About', 'url': '/About'},
+        {'id': 2, 'text': 'Project', 'url': '/Project'}
+      ]"
+    ></slidebarMenu>
     <nav id="nav">
       <router-link to="/">Home </router-link>
       <router-link to="/About">About </router-link>
-      <router-link to="/Skills">Skills </router-link>
       <router-link to="/Project">Project </router-link>
       <router-link to="/Contact">Contact </router-link>
     </nav>
@@ -19,18 +25,24 @@
 </template>
 
 <script>
+import SlidebarMenu from './components/SlidebarMenu'
 
 export default {
   methods: {
     afterLeave () {
       this.$root.$emit('triggerScroll')
     }
+  },
+  components: {
+    'slidebarMenu': SlidebarMenu
   }
 }
 </script>
 
 <style>
 #app {
+  width: 100%;
+  height: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
