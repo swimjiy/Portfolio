@@ -1,7 +1,6 @@
-import Home from './components/Home.vue';
-import About from './components/About.vue';
-import Project from './components/Project.vue';
-import Contact from './components/Contact.vue';
+import Home from './views/Home.vue';
+import About from './views/About.vue';
+import Project from './views/Project.vue';
 
 const routes = [
     {
@@ -16,10 +15,6 @@ const routes = [
     {
         path: '/Project',
         component: Project
-    },
-    {
-        path: '/Contact',
-        component: Contact
     }
 ]
 

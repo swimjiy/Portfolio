@@ -1,0 +1,18 @@
+@import './colors.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: col / 13;
+    grid-row: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    padding: 0 2.5%;
+    z-index: 10;
+    background-color: #fff;
+}
