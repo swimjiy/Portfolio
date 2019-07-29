@@ -2,9 +2,8 @@
 
 .footer {
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: right;
     grid-column: col / 13;
     grid-row: 1;
     position: fixed;
@@ -15,4 +14,25 @@
     padding: 0 2.5%;
     z-index: 10;
     background-color: #fff;
+}
+
+.sns_list {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    border: 1px solid blue;
+    .sns_item {
+        margin-top: 1rem;
+        border: 1px solid red;
+        a {
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            font-size: 1.6rem;
+            color: $dark;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
 }

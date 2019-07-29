@@ -1,11 +1,11 @@
 <template>
     <footer class="footer">
-        <ul>
-            <li v-for='link in links' :key='link.key'>
+        <ul class="sns_list">
+            <li class="sns_item" v-for='link in links' :key='link.key'>
                 <a :href='link.url' :target='link.target'>{{link.name}}</a>
             </li>
         </ul>
-        <button>view details</button>
+        <!-- <button>view details</button> -->
     </footer>
 </template>
 
