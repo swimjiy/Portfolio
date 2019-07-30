@@ -1,4 +1,30 @@
 .container_about {
+    display: flex;
     background-color: salmon;
+}
+.about_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: sandybrown;
+    .about_image_wrapper {
+        
+        p {
+            width: 30rem;
+            height: 30rem;
+            background-color: #ddd;
+        }
+    }
+    .about_text_warpper {
+        .title {
+            font-size: 2.4rem;
+        }
+        .description {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+        }
+    }
 }
   

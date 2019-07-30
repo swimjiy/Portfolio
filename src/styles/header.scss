@@ -1,34 +1,55 @@
 @import './colors.scss';
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 2.5%;
+    display: block;
+    position: relative;
     width: 100%;
-    height: 4rem;
+    // height: 100%;
     z-index: 10;
-    background-color: #fff;
+    // background-color: #fff;
 }
 
 .logo {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
     font-size: 3rem;
     border: 1px solid red;
 }
 
 .navbar_list {
-    border: 1px solid red;
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border: 1px solid red;
     .navbar_item {
         display: flex;
         justify-content: flex-end;
         a {
             font-size: 1.6rem;
             padding: 0 1rem;
+            color: $dark;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.sns_list {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    border: 1px solid blue;
+    .sns_item {
+        border: 1px solid red;
+        a {
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            font-size: 1.6rem;
             color: $dark;
         }
         a:hover {

@@ -16,23 +16,3 @@
     background-color: #fff;
 }
 
-.sns_list {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 2.5rem;
-    border: 1px solid blue;
-    .sns_item {
-        margin-top: 1rem;
-        border: 1px solid red;
-        a {
-            display: block;
-            width: 4rem;
-            height: 4rem;
-            font-size: 1.6rem;
-            color: $dark;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    }
-}
