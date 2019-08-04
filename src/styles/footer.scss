@@ -1,18 +1,34 @@
 @import './colors.scss';
 
 .footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: right;
-    grid-column: col / 13;
-    grid-row: 1;
     position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 4rem;
-    padding: 0 2.5%;
     z-index: 10;
     background-color: #fff;
+
+    .sns_list {
+        position: fixed;
+        bottom: 4rem;
+        left: 0.7rem;
+        .sns_item {
+            padding-top: 1rem;
+            a {
+                display: block;
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1.2rem;
+                color: $dark;
+                border-radius: 50%;
+                background-color: $dark;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 

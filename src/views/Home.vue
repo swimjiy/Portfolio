@@ -1,6 +1,8 @@
 <template>
-    <main class="container container_home">
-        <h1>Welcome to Vue!</h1>
+    <main class="home">
+        <div class="home_section">
+            <h1>Welcome to Vue!</h1>
+        </div>
     </main>
 </template>
 

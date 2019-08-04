@@ -1,6 +1,8 @@
 <template>
-    <main class="container container_project">
-        <h1>Project</h1>
+    <main class="project">
+        <section class="project_section">
+            <h1>Project</h1>
+        </section>
     </main>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <main class="container container_about">
+    <main class="about">
         <section class="about_section">
             <div class="about_image_wrapper">
                 <p>임시 이미지</p>
