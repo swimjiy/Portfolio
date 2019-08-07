@@ -2,7 +2,7 @@
     <header class="header">
         <h1 class="logo">
             <router-link to='/'>
-                logo
+                jiyoung's
             </router-link>
         </h1>
         <ul class="navbar_list">
@@ -28,12 +28,12 @@ export default {
         return {
             routerLinks: [
                 {
-                    name: 'ABOUT',
+                    name: 'about',
                     url: '/ABOUT',
                     key: 0,
                 },
                 {
-                    name: 'PROJECT',
+                    name: 'project',
                     url: '/PROJECT',
                     key: 1,
                 },

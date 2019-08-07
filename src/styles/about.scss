@@ -1,28 +1,100 @@
+@import '@/styles/app.scss';
+
 .about {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 .about_section {
-    flex: 1;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    // justify-content: space-around;
     align-items: center;
-    background-color: sandybrown;
+    padding: 0 10%;
+    flex: 1;
+    // background-color: teal;
+    // border: 1px solid red;
     .about_image_wrapper {
-        
-        p {
-            width: 30rem;
-            height: 30rem;
-            background-color: #ddd;
-        }
+        width: 30rem;
+        height: 40rem;
+        background-color: #cccccc;
     }
     .about_text_warpper {
-        .title {
-            font-size: 2.4rem;
+        flex: 1;
+        padding-left: 10rem;
+        .about_label {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: $blue;
+            .label_icon {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                background-color: $blue;
+            }
+            .label_line {
+                width: 2.3rem;
+                height: 0.1rem;
+                margin: 0 1rem;
+                background-color: $blue;
+            }
+            .label_text {
+                font-size: 1.4rem;
+                font-weight: 500;
+                font-style: normal;
+                text-align: left;
+                color: $blue;
+            }
         }
-        .description {
-            margin-top: 2rem;
+        .about_description {
+            margin-top: 4.4rem;
             font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 2;
+            text-align: left;
+            color: $dark;
+            .text_bold {
+                font-weight: 500;
+            }
+        }
+        .about_hash_list {
+            display: flex;
+            margin-top: 4.4rem;
+            // justify-content: space-between;
+            .hash_item {
+                margin-right: 2rem;
+                font-size: 1.4rem;
+                font-weight: 500;
+                font-style: normal;
+                text-align: left;
+                color: $blue;
+            }
         }
     }
 }
+// .about_section {
+//     flex: 1;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: sandybrown;
+//     .about_image_wrapper {
+        
+//         p {
+//             width: 30rem;
+//             height: 30rem;
+//             background-color: #ddd;
+//         }
+//     }
+//     .about_text_warpper {
+//         .title {
+//             font-size: 2.4rem;
+//         }
+//         .description {
+//             margin-top: 2rem;
+//             font-size: 1.6rem;
+//         }
+//     }
+// }
   
