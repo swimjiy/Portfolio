@@ -29,13 +29,74 @@
                 </ul>
             </div>
         </section>
+        <section class="skills_section">
+            <div class="about_label">
+                <p class="label_icon"></p>
+                <p class="label_line"></p>
+                <p class="label_text">Skills</p>
+            </div>
+            <Chart :chartdata="chartdata" :options="options" class="about_chart" @mousewheel="scrollHorizontal()"/>
+        </section>
     </main>
 </template>
 
 <script>
 import '@/styles/about.scss';
+import Chart from '../components/Chart'
 
 export default {
-    
+    components: {
+        Chart,
+    },
+    data() {
+        function scrollHorizontal(e, delta) {
+            this.scrollLeft -= (delta * 30);
+            e.preventDefault();
+        }
+        return {
+            chartdata : {
+                labels: ['HTML', 'CSS', 'Sass', 'JavaScript', 'jQuery', 'React', 'React Native','Vue', 'PhotoShop', 
+                        ], 
+                datasets: [
+                    {
+                    label: 'Level',
+                    fill: true,
+                    borderColor: '#3366ff',
+                    borderWidth: 2,
+                    backgroundColor: 'rgba(51, 102, 255, 0.2)',
+                    pointBackgroundColor: 'white',
+                    pointBorderColor: '#3366ff',
+                    pointBorderWidth: 7,
+                    //Data to be represented on y-axis
+                    data: [5,5,3,3,2,3,1,2,4]
+                    }
+                ]
+            },
+            options : {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            max: 5,
+                            min: 0,
+                            stepSize: 1
+                        },
+                        gridLines: {
+                            display: true
+                        }
+                    }],
+                    xAxes: [ {
+                        gridLines: {
+                            display: false
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            },
+        }
+    }
 }
 </script>

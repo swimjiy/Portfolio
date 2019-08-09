@@ -1,0 +1,101 @@
+@import '@/styles/app.scss';
+.project_item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    padding: 0 10%;
+    // border: 1px solid violet;
+}
+.project_text_warpper {
+    flex: 1;
+    align-items: center;
+    text-align: left;
+    .item_number {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.17px;
+        color: $blue;
+        &.swiper-pagination {
+            position: unset;
+            text-align: left;
+            .swiper-pagination-current, .swiper-pagination-total {
+                color: $blue;
+            }
+        }
+    }
+    .item_title {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $grey;
+        .title_line {
+            width: 2.3rem;
+            height: 0.1rem;
+            margin: 0 1rem;
+            background-color: $grey;
+        }
+        .title_date {
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            text-align: left;
+            color: $grey;
+        }
+    }
+    .title_text {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.27;
+        letter-spacing: 0.36px;
+        color: $dark;
+    }
+    .item_subtitle{
+        margin-top: 1.4rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.19px;
+        color: $dark;
+    }
+    .item_description {
+        max-width: 38rem;
+        margin-top: 4.7rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 2.4;
+        letter-spacing: 0.17px;
+        color: $dark;
+    }
+    .item_hash_list {
+        display: flex;
+        margin-top: 2rem;
+        // justify-content: space-between;
+        .hash_item {
+            margin-right: 2rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            text-align: left;
+            color: $dark;
+        }
+    }
+    .item_button {
+        display: inline-block;
+        margin-top: 4.7rem;
+        padding: 9px 23px;
+        box-shadow: 0,0,0,0;
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.17px;
+        text-align: left;
+        color: #3a61f5;
+        border: 0;
+        background-color: $lightBlue;
+    }
+}
+.project_image_wrapper {
+    width: 40rem;
+    height: 40rem;
+    background-color: #cccccc;
+}

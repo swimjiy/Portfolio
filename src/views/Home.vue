@@ -8,7 +8,7 @@
                 안에서
             </h2>
             <div class="home_thumb">
-                <div class="image"></div>
+                <img :src="images.home">
             </div>
             <h2 class="home_title title_right">
                 <span class="text_blue">&lt;</span>
@@ -24,6 +24,12 @@
 import '@/styles/home.scss';
 
 export default {
-    
+    data() {
+        return {
+            images: {
+                home: require('../assets/img_home.svg')
+            }
+        }
+    }
 }
 </script>
