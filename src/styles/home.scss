@@ -37,9 +37,20 @@
   }
 }
 .home_thumb {
-  width: 53rem;
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65rem;
   height: 16rem;
-  border: 1px solid #000;
+  // border: 1px solid #000;
+  .home_thumb_img {
+    // position: absolute;
+    // top: -20%;
+    // left: 50%;
+    // height: 150%;
+    // height: 100%;
+  }
   // transform: rotate(-30deg)
   // .image {
   //   position: absolute;

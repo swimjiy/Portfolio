@@ -2,7 +2,7 @@
     <header class="header">
         <h1 class="logo">
             <router-link to='/'>
-                jiyoung's
+                Swimmer
             </router-link>
         </h1>
         <ul class="navbar_list">

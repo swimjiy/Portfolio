@@ -1,26 +1,32 @@
 @import '@/styles/app.scss';
+// @import '../assets/img_home.svg';
 
 .about {
     // display: flex;
     width: 100%;
-    // height: 100%;
+    // border: 1px solid violet;
 }
 .about_section {
     display: flex;
-    // justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 100vh;
     padding: 0 10%;
     flex: 1;
     // background-color: teal;
     // border: 1px solid red;
     .about_image_wrapper {
-        width: 30rem;
+        width: 40rem;
         height: 40rem;
-        background-color: #cccccc;
+
+        .about_thumb_img {
+            width: 100%;
+            height: auto
+        }
     }
     .about_text_warpper {
         flex: 1;
-        padding-left: 10rem;
+        // padding-left: 10rem;
         .about_label {
             display: flex;
             justify-content: flex-start;
@@ -73,10 +79,80 @@
     }
 }
 .skills_section {
-    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    // align-items: center;
+    height: 100vh;
     padding: 0 10%;
-    .about_chart {
+    background-color: $lightBlue;
+    .skills_list {
+        display: flex;
+        flex-direction: row; 
         margin-top: 2rem;
+    }
+    .skills_item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 25%;
+        padding: 2rem;
+        height: 40rem;
+        margin: 10px;
+        border-radius: 1rem;
+        background-color: #fff;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
+    }
+    .skills_title {
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: $blue;
+        text-align: right;
+        // transform: translateX(-50%) rotate(270deg)
+    }
+    .skills_detail_list {
+        text-align: left;
+        .skills_detail_item {
+            position: relative;
+            margin-top: 1rem;
+            line-height: 3.5rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $dark;
+            // border-bottom: 1px solid $lightBlue;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #cee1ff;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+                width: 25%;
+                height: 3px;
+                background-color: $blue;
+            }
+            &.beginner:before{
+                width: 25%;
+            }
+            &.intermediate:before{
+                width: 50%;
+            }
+            &.expert:before{
+                width: 80%;
+            }
+        }
     }
 }
 .about_label {

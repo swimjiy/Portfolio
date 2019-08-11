@@ -61,40 +61,40 @@ export default {
             virtualData: {
                 slides: [
                     {
-                        title: '첫번째',
-                        subTitle: '서브타이틀',
-                        description: '첫번째 내용',
-                        date: 2018,
-                        hash: ['html', 'css', 'JavaScript'],
+                        title: 'DOUZONE 웹 빌더',
+                        subTitle: '기여도 : 30%',
+                        description: '더존 웹빌더는 더존을 이용하는 사용자들의 빠르고 쉬운 웹페이지 제작을 돕는 서비스입니다. 웹빌더 제작에 필요한 다양한 템플릿과 편집툴 UI를 구축했습니다.',
+                        date: '2019.05 ~ 2019.06',
+                        hash: ['HTML5', 'CSS3', 'JavaScript'],
                         url: 'www.naver.com'
                     },
                     {
-                        title: '두번째',
-                        subTitle: '서브타이틀',
-                        description: '두번째 내용',
-                        date: 2018,
-                        hash: ['html', 'css', 'JavaScript'],
+                        title: 'i-ONE Bank',
+                        subTitle: '기여도 : 30%',
+                        description: 'IBK 기업은행 차세대 앱 i-ONE Bank입니다. React와 HTML5를 결합한 하이브리드 앱이며,  HTM5와 CSS3를 이용한 UI구축 및 animate 속성을 이용한 인터렉션을 담당했습니다.',
+                        date: '2019.02 ~ 2019.05',
+                        hash: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'ZIRA', 'SVN'],
                         url: 'www.naver.com'
                     },
                     {
-                        title: '세번째',
-                        subTitle: '서브타이틀',
-                        description: '세번째 내용',
-                        date: 2018,
-                        hash: ['html', 'css', 'JavaScript'],
+                        title: '한경닷컴',
+                        subTitle: '기여도 : 50%',
+                        description: '한국경제신문 계열사인 한경닷컴의 자사 페이지 유지보수 및 사내 프로젝트를 구축했습니다.',
+                        date: '2018.10 ~ 2019.02',
+                        hash: ['HTML5', 'CSS3', 'SVN'],
                         url: 'www.naver.com'
                     },
                     {
-                        title: '네번째',
-                        subTitle: '서브타이틀',
-                        description: '네번째 내용',
-                        date: 2018,
-                        hash: ['html', 'css', 'JavaScript'],
+                        title: 'KEDICO',
+                        subTitle: '기여도 : 30%',
+                        description: 'KEDICO는 한국경제신문과 전문평가단이 제공하는 ICO/암호화폐 평가 전문 사이트입니다.HTML5, CSS3를 이용한 모바일/PC 웹 UI 및 BootStrap4를 이용한 관리자 페이지 UI를 구축했습니다.',
+                        date: '2018.07 ~ 2018.10',
+                        hash: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap4', 'Git'],
                         url: 'www.naver.com'
                     },
                     {
                         title: '다섯번째',
-                        subTitle: '서브타이틀',
+                        subTitle: '기여도 : 30%',
                         description: '다섯번째 내용',
                         date: 2018,
                         hash: ['html', 'css', 'JavaScript'],

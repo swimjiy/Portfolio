@@ -2,7 +2,7 @@
     <header class="footer">
         <ul class="sns_list">
             <li class="sns_item" v-for='link in snsLinks' :key='link.key'>
-                <a :href='link.url' :target='link.target'>{{link.name}}</a>
+                <a :href='link.url' :target='link.target' :class='"sns_" + link.name' :alt='link.name + "새 창으로 이동"'></a>
             </li>
         </ul>
     </header>
@@ -23,11 +23,17 @@ export default {
                     key: 0,
                 },
                 {
-                    name: 'email',
+                    name: 'linkedin',
                     url: 'mailto:vivid8222@gmail.com',
                     target: '_blank',
                     key: 1,
                 },
+                // {
+                //     name: 'email',
+                //     url: 'mailto:vivid8222@gmail.com',
+                //     target: '_blank',
+                //     key: 2,
+                // },
             ]
         }
     }
