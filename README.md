@@ -1,3 +1,9 @@
 # Portfolio
 
-with Vue.js
+>  2019 ver.
+
+
+
+Design : PhotoShopCC, Zeplin
+
+Develop : Vue.js, Vue Router
