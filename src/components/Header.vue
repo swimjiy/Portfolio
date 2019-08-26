@@ -2,10 +2,10 @@
     <header class="header">
         <h1 class="logo">
             <router-link to='/'>
-                Swimmer
+                Swimjy
             </router-link>
         </h1>
-        <ul class="navbar_list">
+        <ul class="navbar_list hidden-sm-and-down">
             <router-link
                 class="navbar_item"
                 tag='li'

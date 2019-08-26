@@ -1,7 +1,5 @@
 <template>
-    <main class="project">
-        <Swiper />
-    </main>
+    <Swiper />
 </template>
 
 <script>

@@ -1,11 +1,10 @@
 <template>
-    <main class="about">
-        <section class="about_section">
-            <div class="about_image_wrapper">
-                <!-- <AboutImage class="about_thumb_img"/> -->
-                <img svg-inline class="icon about_thumb_img" src="../assets/img_about.svg" alt=""/>
-            </div>
-            <div class="about_text_warpper">
+    <v-container grid-list-lg px-4>
+        <v-layout row wrap align-center class="section">
+            <v-flex xs12 md6>
+                <img svg-inline class="thumb" src="../assets/img_about.svg" alt=""/>
+            </v-flex>
+            <v-flex xs12 md6>
                 <div class="about_label">
                     <p class="label_icon"></p>
                     <p class="label_line"></p>
@@ -22,25 +21,25 @@
                     </p>
                 </div>
                 <ul class="about_hash_list">
-                    <!-- <li class="hash_item"># Web Development</li> -->
                     <li class="hash_item"># Web Front-End Developer</li>
                     <li class="hash_item"># UX/UI</li>
                     <li class="hash_item"># A11y</li>
                 </ul>
-            </div>
-        </section>
-        <section class="skills_section">
-            <div class="about_label">
+                <NavigationLink url="www.naver.com">See resume</NavigationLink>
+            </v-flex>
+        </v-layout>
+        <v-layout row wrap class="section">
+            <v-flex class="about_label" xs12>
                 <p class="label_icon"></p>
                 <p class="label_line"></p>
                 <p class="label_text">Skills</p>
-            </div>
-            <ul class="skills_list">
-                <li 
-                    v-for="(category, index) in category"
-                    :key="index"
-                    class="skills_item" 
-                >
+            </v-flex>
+            <v-flex
+                xs12 sm6 lg3 px-2
+                v-for="(category, index) in category"
+                :key="index"
+            >
+                <div class="skills_item"> 
                     <h3 class="skills_title">{{ category.title }}</h3>
                     <ul class="skills_detail_list">
                         <li
@@ -48,38 +47,30 @@
                             :key="index"
                             :class='skill.level'
                             class="skills_detail_item"
+                            :title="skill.lavel"
+                            :aria-label="skill.level + ' in '"
                         >
                             {{ skill.name }}
                         </li>
                     </ul>
-                </li>
-            </ul>
-            <!-- <div class="about_label">
-                <p class="label_icon"></p>
-                <p class="label_line"></p>
-                <p class="label_text">Skills</p>
-            </div>
-            <Chart :chartdata="chartdata" :options="options" class="about_chart" @mousewheel="scrollHorizontal()"/> -->
-        </section>
-    </main>
+                </div>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
 import '@/styles/about.scss';
+import NavLink from '../components/NavLink.vue'
 // import AboutImage from '../assets/img_about.svg';
-import Chart from '../components/Chart'
 
 export default {
     name: 'About',
     components: {
-        Chart,
         // AboutImage
+        "NavigationLink": NavLink
     },
     data() {
-        function scrollHorizontal(e, delta) {
-            this.scrollLeft -= (delta * 30);
-            e.preventDefault();
-        }
         return {
             category : [
                 {
@@ -167,48 +158,6 @@ export default {
                     ]
                 }
             ],
-            chartdata : {
-                labels: ['HTML', 'CSS', 'Sass', 'JavaScript', 'jQuery', 'React', 'React Native','Vue', 'PhotoShop', 
-                        ], 
-                datasets: [
-                    {
-                    label: 'Level',
-                    fill: true,
-                    borderColor: '#3366ff',
-                    borderWidth: 2,
-                    backgroundColor: 'rgba(51, 102, 255, 0.2)',
-                    pointBackgroundColor: 'white',
-                    pointBorderColor: '#3366ff',
-                    pointBorderWidth: 7,
-                    //Data to be represented on y-axis
-                    data: [5,5,3,3,2,3,1,2,4]
-                    }
-                ]
-            },
-            options : {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            max: 5,
-                            min: 0,
-                            stepSize: 1
-                        },
-                        gridLines: {
-                            display: true
-                        }
-                    }],
-                    xAxes: [ {
-                        gridLines: {
-                            display: false
-                        }
-                    }]
-                },
-                legend: {
-                    display: false
-                },
-                responsive: true,
-                maintainAspectRatio: false
-            },
         }
     }
 }

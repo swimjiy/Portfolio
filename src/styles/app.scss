@@ -32,10 +32,18 @@ html {
 }
 
 .container {
-  position: relative;
-  overflow: hidden;
+  // position: relative;
+  // overflow: hidden;
+  // width: 100%;
+  // min-height: 100vh;
+  // padding: 8rem;
+  // background-color: #fff;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
-  // padding: 8rem;
-  background-color: #fff;
 }

@@ -1,5 +1,4 @@
 <template>
-  <!-- <button class="{ rounded: rounded }"><slot></slot></button> -->
   <a class="nav_link" :href="url" target="_blank"><slot></slot></a>
 </template>
 <script>
@@ -8,9 +7,6 @@ export default {
     url: {
       type: String
     },
-    // target: {
-    //   type: boolean
-    // }
   }
 }
 </script>
