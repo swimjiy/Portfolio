@@ -1,7 +1,8 @@
 @import '@/styles/app.scss';
 
 .home_title {
-  font-size: 60px;
+  padding: 0 3rem;
+  font-size: 6rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -26,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 65rem;
+  max-width: 65rem;
   height: 16rem;
   margin: 0 auto;
 }

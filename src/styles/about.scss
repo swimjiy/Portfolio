@@ -12,10 +12,10 @@
     align-items: center;
     color: $blue;
     .label_icon {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        background-color: $blue;
+        // width: 2rem;
+        // height: 2rem;
+        // border-radius: 50%;
+        // background-color: $blue;
     }
     .label_line {
         width: 2.3rem;
@@ -32,7 +32,7 @@
     }
 }
 .about_description {
-    margin-top: 4.4rem;
+    margin-top: 3.4rem;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 2;
@@ -78,11 +78,54 @@
     background-color: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
 }
+.about_button {
+    margin-bottom: 5rem;
+}
 .skills_title {
     font-size: 2.4rem;
     font-weight: 300;
     color: $blue;
     text-align: right;
+}
+.sns_list {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    .sns_item {
+        padding-right: 2rem;
+        a {
+            display: block;
+            // width: 2.4rem;
+            height: 2.4rem;
+            padding-left: 3rem;
+            font-size: 1.2rem;
+            color: $dark;
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            color: $blue;
+            transition: all 0.3s;
+        }
+        a:hover {
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        .sns_github {
+            background-image: url('../assets/icon_github.svg');
+            background-size: auto 100%;
+            background-position: left center;
+        }
+        .sns_blog {
+            background-image: url('../assets/icon_blog.svg');
+            background-size: auto 100%;
+            background-position: left center;
+        }
+        .sns_email {
+            background-image: url('../assets/icon_mail.svg');
+            background-size: auto 100%;
+            background-position: left center;
+        }
+    }
 }
 .skills_detail_list {
     text-align: left;

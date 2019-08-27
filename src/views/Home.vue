@@ -19,16 +19,18 @@
                 </h2>
             </v-flex>
         </v-layout>
+        <!-- <Footer /> -->
     </v-container>
 </template>
 
 <script>
 import '@/styles/home.scss';
-
+// import Footer from '../components/Footer'
 
 export default {
     name: 'Home',
     components: {
+        // Footer
     }
 }
 </script>

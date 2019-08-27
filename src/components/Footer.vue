@@ -1,11 +1,11 @@
 <template>
-    <header class="footer">
+    <footer class="footer">
         <ul class="sns_list">
             <li class="sns_item" v-for='link in snsLinks' :key='link.key'>
                 <a :href='link.url' :target='link.target' :class='"sns_" + link.name' :alt='link.name + "새 창으로 이동"'></a>
             </li>
         </ul>
-    </header>
+    </footer>
 </template>
 
 <script>

@@ -1,13 +1,14 @@
 <template>
-    <v-container grid-list-lg px-4>
+    <v-container grid-list-lg>
         <v-layout row wrap align-center class="section">
             <v-flex xs12 md6>
                 <img svg-inline class="thumb" src="../assets/img_about.svg" alt=""/>
             </v-flex>
             <v-flex xs12 md6>
                 <div class="about_label">
-                    <p class="label_icon"></p>
-                    <p class="label_line"></p>
+                    <!-- <p class="label_icon"></p> -->
+                    <img svg-inline class="label_icon" src="../assets/wave_line.svg" alt=""/>
+                    <!-- <p class="label_line"></p> -->
                     <p class="label_text">Introduce</p>
                 </div>
                 <div class="about_description">
@@ -20,18 +21,33 @@
                         갖고 있습니다.  -->
                     </p>
                 </div>
-                <ul class="about_hash_list">
+                <!-- <ul class="about_hash_list">
                     <li class="hash_item"># Web Front-End Developer</li>
                     <li class="hash_item"># UX/UI</li>
                     <li class="hash_item"># A11y</li>
+                </ul> -->
+                <!-- <ul class="about_hash_list">
+                    <li class="hash_item"># github</li>
+                    <li class="hash_item"># blog</li>
+                    <li class="hash_item"># email</li>
+                </ul> -->
+                <ul class="sns_list">
+                    <li class="sns_item" v-for='link in snsLinks' :key='link.key'>
+                        <a :href='link.url'
+                        :target='link.target' 
+                        :class='"sns_" + link.name' 
+                        :alt='link.name + "새 창으로 이동"'
+                        >{{link.name}}</a>
+                    </li>
                 </ul>
-                <NavigationLink url="www.naver.com">See resume</NavigationLink>
+                <NavigationLink url="www.naver.com" class="about_button">See resume</NavigationLink>
             </v-flex>
         </v-layout>
         <v-layout row wrap class="section">
             <v-flex class="about_label" xs12>
-                <p class="label_icon"></p>
-                <p class="label_line"></p>
+                <!-- <p class="label_icon"></p> -->
+                <img svg-inline class="label_icon" src="../assets/wave_line.svg" alt=""/>
+                <!-- <p class="label_line"></p> -->
                 <p class="label_text">Skills</p>
             </v-flex>
             <v-flex
@@ -72,6 +88,26 @@ export default {
     },
     data() {
         return {
+            snsLinks: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/sumim00',
+                    target: '_blank',
+                    key: 0,
+                },
+                {
+                    name: 'blog',
+                    url: 'https://sumim00.github.io/',
+                    target: '_blank',
+                    key: 1,
+                },
+                {
+                    name: 'email',
+                    url: 'mailto:vivid8222@gmail.com',
+                    target: '_blank',
+                    key: 2,
+                },
+            ],
             category : [
                 {
                     title: 'Language',

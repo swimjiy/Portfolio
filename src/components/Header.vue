@@ -2,7 +2,7 @@
     <header class="header">
         <h1 class="logo">
             <router-link to='/'>
-                Swimjy
+                swimmjy
             </router-link>
         </h1>
         <ul class="navbar_list hidden-sm-and-down">

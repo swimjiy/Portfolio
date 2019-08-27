@@ -31,12 +31,13 @@
                                     <NavigationLink :url="slide.url">See resume</NavigationLink>
                                 </v-flex>
                                 <v-flex xs12 md6 class="project_image_wrapper">
+                                    <img :src="require('../assets/'+slide.image)" alt="" class="image">
                                 </v-flex>
                             </v-layout>
                         </v-container>
                     </swiper-slide>
-                    <div class="swiper-button-prev" slot="button-prev"></div>
-                    <div class="swiper-button-next" slot="button-next"></div>
+                    <div class="swiper-button-prev d-none d-lg-block" slot="button-prev"></div>
+                    <div class="swiper-button-next d-none d-lg-block" slot="button-next"></div>
                 </swiper>
             </v-flex>
         </v-layout>
@@ -78,7 +79,8 @@ export default {
                         description: 'IT 연합 동아리 NEXTERS 15기 활동으로 제작한 앱입니다. ios와 안드로이드 호환이 가능한 React Native로 제작했으며, state관리를 위해 Redux 및 Redux-saga를 사용했습니다.',
                         date: '2019.07 ~ 2019.08',
                         hash: ['React Native', 'Redux', 'Redux-saga', 'expo'],
-                        url: 'www.naver.com'
+                        image: 'project_culor.jpg',
+                        url: ''
                     },
                     {
                         title: 'DOUZONE 웹 빌더',
@@ -86,7 +88,8 @@ export default {
                         description: '더존 웹빌더는 더존을 이용하는 사용자들의 빠르고 쉬운 웹페이지 제작을 돕는 서비스입니다. 웹빌더 제작에 필요한 다양한 템플릿과 편집툴 UI를 구축했습니다.',
                         date: '2019.05 ~ 2019.06',
                         hash: ['HTML5', 'CSS3', 'JavaScript'],
-                        url: 'www.naver.com'
+                        image: 'project_douzone.jpg',
+                        url: 'http://www.we-builder.net/'
                     },
                     {
                         title: 'i-ONE Bank',
@@ -94,7 +97,8 @@ export default {
                         description: 'IBK 기업은행 차세대 앱 i-ONE Bank입니다. React와 HTML5를 결합한 하이브리드 앱이며,  HTM5와 CSS3를 이용한 UI구축 및 animate 속성을 이용한 인터렉션을 담당했습니다.',
                         date: '2019.02 ~ 2019.05',
                         hash: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'ZIRA', 'SVN'],
-                        url: 'www.naver.com'
+                        image: 'project_ibk.jpg',
+                        url: 'https://play.google.com/store/apps/details?id=com.ibk.android.ionebank&hl=en_US'
                     },
                     {
                         title: '한경닷컴',
@@ -102,7 +106,8 @@ export default {
                         description: '한국경제신문 계열사인 한경닷컴의 자사 페이지 유지보수 및 사내 프로젝트를 구축했습니다.',
                         date: '2018.10 ~ 2019.02',
                         hash: ['HTML5', 'CSS3', 'SVN'],
-                        url: 'www.naver.com'
+                        image: 'project-hk.jpg',
+                        url: 'https://www.hankyung.com'
                     },
                     {
                         title: 'KEDICO',
@@ -110,7 +115,8 @@ export default {
                         description: 'KEDICO는 한국경제신문과 전문평가단이 제공하는 ICO/암호화폐 평가 전문 사이트입니다.HTML5, CSS3를 이용한 모바일/PC 웹 UI 및 BootStrap4를 이용한 관리자 페이지 UI를 구축했습니다.',
                         date: '2018.07 ~ 2018.10',
                         hash: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap4', 'Git'],
-                        url: 'www.naver.com'
+                        image: 'project-kedico.jpg',
+                        url: ''
                     },
                 ]
             },
