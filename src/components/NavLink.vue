@@ -10,17 +10,14 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-@import '@/styles/app.scss';
-.rounded {
-  border-radius: 10px;
-}
+<style lang="scss" scoped>
+@import '@/assets/scss/app.scss';
 .nav_link {
   display: inline-block;
-  margin-top: 4.7rem;
+  margin-top: 2em;
   padding: 9px 23px;
   box-shadow: 0,0,0,0;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: 500;
   letter-spacing: 0.17px;
   text-align: left;
@@ -28,6 +25,10 @@ export default {
   border: 0;
   background-color: $lightBlue;
   transition: 0.3s all ease-out;
+  white-space: nowrap;
+  @include breakpoint(medium) {
+      margin-top: 3em;
+  }
 
   &:hover{
     color: #fff;
