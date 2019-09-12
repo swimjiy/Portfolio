@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0"/>
+        <title>KEDICO 회원가입 | KEDICO</title>
+        <link rel="stylesheet" type="text/css" href="../resources/css/m/common.css"/>
+    </head>
+    <!-- gnb 활성화 시에 body에 no_fixed_scroll 클래스 추가 -->
+    <body>
+        <!-- skip -->
+        <div class="skip_menu">
+      		<a href="#container">본문바로가기</a>
+      	</div>
+        <!-- //skip -->
+        <div class="wrap">
+            <!-- header -->
+            <header id="header" class="header">
+                <h1 class="logo">
+                    <a href="#"><img src="../resources/images/m/logo.png" alt="KEDICO"></a>
+                </h1>
+                <div class="btn_menu">
+                    <a href="#"><span class="blind">메뉴</span></a>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- gnb: 활성화 시에 body에 no_fixed_scroll 클래스 추가 및 gnb에 active 클래스 추가 -->
+            <nav class="gnb">
+                <div class="gnb_logo">
+                    <a href="#"><img src="../resources/images/m/logo_red.png" alt="KEDICO"></a>
+                </div>
+                <div class="gnb_inner">
+                    <ul class="gnb_list">
+                        <li><a href="#">HOME</a></li>
+                        <li class="active"><a href="#">KEDICO 소개</a></li>
+                        <li><a href="#">ICO리스트</a></li>
+                        <li><a href="#">전문위원</a></li>
+                        <li><a href="#">ICO뉴스</a></li>
+                        <!-- 비회원일 때 -->
+                        <li><a href="#">로그인 / 회원가입</a></li>
+                        <!-- //비회원일 때 -->
+                        <!-- 개인회원일 때 -->
+                        <li><a href="#">개인정보 수정</a></li>
+                        <!-- //개인회원일 때 -->
+                        <!-- 전문회원일 때 -->
+                        <li><a href="#">개인정보 수정</a></li>
+                        <li><a href="#">내 평가 리스트</a></li>
+                        <!-- //전문회원일 때 -->
+                        <!-- 기업회원일 때 -->
+                        <li><a href="#">개인정보 수정</a></li>
+                        <li><a href="#">내 ICO 현황</a></li>
+                        <!-- //기업회원일 때 -->
+                    </ul>
+                </div>
+                <ul class="gnb_bottom">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <button type="button" class="btn_close">
+                    <span class="blind">닫기</span>
+                </button>
+            </nav>
+            <div class="mask"></div>
+            <!-- // gnb -->
+            <!-- container -->
+            <section id="container" class="container">
+                <div class="contents join">
+                    <div class="con_tit_wrap">
+                        <h2 class="tit">KEDICO 회원가입</h2>
+                    </div>
+                    <div class="section cont_box join_explain">
+                        <nav class="lnb_tab join_tab">
+                            <ul>
+                                <li><a href="#">개인회원 가입</a></li>
+                                <li class="active"><a href="#">기업회원 가입</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="explain_list corp">
+                            <li>ICO를 등록하고 평가를 받고자 하는 개발</li>
+                            <li>공증된 KEDICO의 평가를 받고자 하는 개발사</li>
+                        </ul>
+                        <ul class="join_benefits">
+                            <li class="benefit01">
+                                <span class="inner">
+                                    신규 가입 시<br>포인트 바로 지급
+                                </span>
+                            </li>
+                            <li class="benefit02">
+                                <span class="inner">
+                                    노출 기간<br>무료 연장서비스
+                                </span>
+                            </li>
+                            <li class="benefit03">
+                                <span class="inner">
+                                    KEDICO 무료 평가
+                                </span>
+                            </li>
+                            <li class="benefit04">
+                                <span class="inner">
+                                    KEDICO주최<br>세미나 무료 참가
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <div class="sub_tit_wrap">
+                            <h3 class="sub_tit">기업회원 가입</h3>
+                            <div class="r_side_box">
+                                <strong class="ico_required">필수항목</strong>
+                            </div>
+                        </div>
+                        <div class="cont_box">
+                            <div class="chk_row">
+                                <input id="chkbox01_1" type="checkbox" class="inp_chkbox">
+                                <label for="chkbox01_1" class="chk_label">이용약관 및 개인정보 이용 및 마케팅 활용 방침에 모두 동의합니다.</label>
+                            </div>
+                            <ul class="toggle_list join_policy_box">
+                                <!-- btn_policy 버튼 클릭시 toggle_item active 추가 -->
+                                <li class="toggle_item active">
+                                    <div class="toggle_tit">
+                                        <input id="chkbox01_2" type="checkbox" class="inp_chkbox">
+                                        <label for="chkbox01_2" class="chk_label">이용약관 동의<strong class="ico_required"><span class="blind">필수항목</span></strong></label>
+                                        <div class="r_side_box">
+                                            <button class="btn_policy" type="button"><span class="blind">상세보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="toggle_box">
+                                        <p class="cont">
+                                            제 1 조 (목적)<br>
+                                            본 약관은 잡코리아 유한회사 (이하 "회사")가 운영하는 "
+                                            서비스"를 이용함에 있어 "회사"와 회원간의 이용 조건 및
+                                            제반 절차, 권리, 의무 및 책임사항, 기타 필요한 사항을 규
+                                            정함을 목적으로 한다.<br><br>
+
+                                            제 2 조 (용어의 정의)<br>
+                                            이 약관에서 사용하는 용어의 정의는 아래와 같다.<br><br><br><br><br>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="toggle_item">
+                                    <div class="toggle_tit">
+                                        <input id="chkbox01_3" type="checkbox" class="inp_chkbox">
+                                        <label for="chkbox01_3" class="chk_label">개인정보 이용 및 마케팅활용방침<strong class="ico_required"><span class="blind">필수항목</span></strong></label>
+                                        <div class="r_side_box">
+                                            <button class="btn_policy" type="button"><span class="blind">상세보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="toggle_box">
+                                        <p class="cont">
+                                            제 1 조 (목적)<br>
+                                            본 약관은 잡코리아 유한회사 (이하 "회사")가 운영하는 "
+                                            서비스"를 이용함에 있어 "회사"와 회원간의 이용 조건 및
+                                            제반 절차, 권리, 의무 및 책임사항, 기타 필요한 사항을 규
+                                            정함을 목적으로 한다.<br><br>
+
+                                            제 2 조 (용어의 정의)<br>
+                                            이 약관에서 사용하는 용어의 정의는 아래와 같다.<br><br><br><br><br>
+                                        </p>
+                                    </div>
+                                </li>
+                                <!-- // btn_policy 버튼 클릭시 toggle_item active 추가 -->
+                            </ul>
+                            <div class="join_form">
+                                <h4 class="tit">추가정보 입력</h4>
+                                <div class="form_row type_info">
+                                    <strong class="form_tit">연동서비스</strong>
+                                    <span class="desc">GOOGLE</span>
+                                </div>
+                                <div class="form_row type_info">
+                                    <strong class="form_tit">이메일 주소</strong>
+                                    <span class="desc">dahahkim@gmail.com</span>
+                                </div>
+                                <div class="form_row type_txt">
+                                    <label for="join01_1" class="form_tit">회사명<strong class="ico_required"><span class="blind">필수항목</span></strong></label>
+                                    <input id="join01_1" type="text" class="form_input">
+                                </div>
+                                <div class="form_row type_txt">
+                                    <label for="join01_2" class="form_tit">연락처 1</label>
+                                    <input id="join01_2" type="text" class="form_input" placeholder="하이픈 “-”은 제외하고 입력">
+                                </div>
+                                <div class="form_row type_txt">
+                                    <label for="join01_3" class="form_tit">연락처 2</label>
+                                    <input id="join01_3" type="text" class="form_input" placeholder="하이픈 “-”은 제외하고 입력">
+                                </div>
+                                <div class="form_row type_txt">
+                                    <label for="join01_4" class="form_tit">주소</label>
+                                    <input id="join01_4" type="text" class="form_input">
+                                </div>
+                                <div class="form_row type_longtxt">
+                                    <label for="join01_5" class="form_tit">상세주소</label>
+                                    <input id="join01_5" type="text" class="form_input">
+                                </div>
+                                <div class="form_row type_textarea">
+                                    <label for="join01_6" class="form_tit">기업소개<strong class="ico_required"><span class="blind">필수항목</span></strong></label>
+                                    <div class="r_side_box">
+                                        <span class="txt_count">0/1000</span>
+                                    </div>
+                                    <textarea id="join01_6" rows="7" cols="80" class="form_input"></textarea>
+                                </div>
+                            </div>
+                            <div class="join_agree">
+                                <div class="chk_row">
+                                    <input id="chkbox01_4" type="checkbox" class="inp_chkbox">
+                                    <label for="chkbox01_4" class="chk_label"> KEDICO가 제공하는 뉴스레터 수신에 동의합니다</label>
+                                </div>
+                                <p class="desc">
+                                    뉴스레터 수신에 동의하시면 KEDICO에서 제공하는 ICO 정보 및 세미나, 이벤트 등의 안내를 받아보실 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="btn_box">
+                                <!-- active 클래스로 활성화, disabled 클래스로 비활성화 -->
+                                <button class="btn_square01 active">가입하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // container -->
+            <!-- footer -->
+            <footer id="footer" class="footer">
+                <span>© 2018 KEDICO. All rights reserved.</span>
+            </footer>
+            <!-- // footer -->
+            <!-- top버튼 -->
+            <div class="btn_top">
+                <a href="#"><img src="../resources/images/m/ico/ico_top.png" alt="TOP"></a>
+            </div>
+            <!-- top버튼 -->
+        </div>
+    </body>
+</html>
