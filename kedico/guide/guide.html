@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>LAYOUT | KEDICO</title>
+        <link rel="stylesheet" type="text/css" href="../resources/css/w/common.css"/>
+        <style media="screen">
+            .guide_tit {margin-top:30px; font-size:24px; font-weight:700}
+            .guide_sub {margin-top:10px; padding:15px; font-size:16px; line-height:24px; background-color:#e5e5e5}
+            .guide_box {margin:20px 0; padding:10px; border:1px solid #ccc}
+        </style>
+    </head>
+    <body>
+        <!-- skip -->
+        <div class="skip_menu">
+      		<a href="#container">본문바로가기</a>
+      	</div>
+      	<!-- //skip -->
+        <div class="wrap">
+            <!-- header -->
+            <header id="header" class="header">
+                <div class="h_top">
+                    <h1 class="h_logo">
+                        <a href="#"><img src="../resources/images/w/logo.png" alt="logo"></a>
+                    </h1>
+                    <div class="h_utility">
+                        <ul>
+                             <li><a href="#">로그인</a></li>
+                             <li><a href="#">고객센터</a></li>
+                             <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="h_bottom">
+                    <div class="gnb">
+                        <ul class="gnb_list">
+                            <li><a href="#">KEDICO란</a></li>
+                            <li class="active"><a href="#">ICO 리스트</a></li>
+                            <li><a href="#">ICO NEWS</a></li>
+                            <li><a href="#">전문위원</a></li>
+                            <!-- active 클래스로 활성화 -->
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- header 로그인 후 -->
+            <header id="header" class="header">
+                <div class="h_top">
+                    <h1 class="h_logo">
+                        <a href="#"><img src="../resources/images/w/logo.png" alt="logo"></a>
+                    </h1>
+                    <div class="h_utility">
+                        <ul>
+                            <li><a href="#">마이페이지</a></li>
+                             <li><a href="#">로그아웃</a></li>
+                             <li><a href="#">고객센터</a></li>
+                             <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="h_bottom">
+                    <div class="gnb">
+                        <ul class="gnb_list">
+                            <li><a href="#">KEDICO란</a></li>
+                            <li class="active"><a href="#">ICO 리스트</a></li>
+                            <li><a href="#">ICO NEWS</a></li>
+                            <li><a href="#">전문위원</a></li>
+                            <!-- active 클래스로 활성화 -->
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- container -->
+            <section id="container" class="container">
+                <div class="contents">
+                    <article class="section">
+                        <h4 class="guide_tit">[ 제목 ]</h4>
+                        <div class="guide_sub">
+                            <span>- 하단 라인은 더블클래스 border 추가</span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="con_tit_wrap">
+                                <h2 class="tit">고객센터</h2>
+                            </div>
+                            <div class="con_tit_wrap border">
+                                <h2 class="tit">고객센터</h2>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 탭 ]</h4>
+                        <div class="guide_sub">
+                            <span>- active 클래스로 제어</span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="tab_menu">
+                                <ul class="tab_list">
+                                    <li class="active"><a href="#" class="btn_tab">ICO정보</a></li>
+                                    <li><a href="#" class="btn_tab">전문가평가</a></li>
+                                    <li><a href="#" class="btn_tab">기업정보</a></li>
+                                </ul>
+                            </div>
+                            <br>
+                            <ul class="my_step">
+                                <li class="item active">
+                                    <a href="#">1 코인정보</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">2 ICO 정보</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">3 SNS 정보</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 버튼 ]</h4>
+                        <div class="guide_sub">
+                            <span>- active 클래스로 제어</span>
+                        </div>
+                        <div class="guide_box">
+                            <a href="#" class="btn btn_round">상세검색</a>
+                            <a href="#" class="btn btn_round active">상세검색</a>
+                            <a href="#" class="btn btn_square">플랫폼</a>
+                            <a href="#" class="btn btn_square active">플랫폼</a>
+                            <a href="#" class="btn_record">비즈니스<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">인터넷<span class="blind">삭제</span></a>
+                        </div>
+                        <div class="guide_sub">
+                            <span>- active 클래스로 컬러 변경, large 클래스 height=60px. long클래스 width=285px</span>
+                        </div>
+                        <div class="guide_box">
+                            <a href="#" class="btn_form01 active">평가하기</a>
+                            <a href="#" class="btn_form01 active large">평가하기</a>
+                            <a href="#" class="btn_form01 active long">평가하기</a>
+                            <a href="#" class="btn_form01">취소하기</a>
+                            <a href="#" class="btn_form01 disabled">탈퇴하기</a>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 버튼 정렬 ]</h4>
+                        <div class="guide_sub">
+                            <span>- btn_row 클래스로 감싸고, 더블 클래스 혹은 하위 태그 추가</span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="btn_row right">
+                                <a href="#" class="btn_form01 active">다음</a>
+                            </div>
+                            <div class="btn_row center">
+                                <a href="#" class="btn_form01 active">시작하기</a>
+                            </div>
+                            <div class="btn_row left">
+                                <a href="#" class="btn_form01 active">이전</a>
+                            </div>
+                            <div class="btn_row">
+                                <div class="btn_left">
+                                    <a href="#" class="btn_form01">탈퇴하기</a>
+                                </div>
+                                <div class="btn_right">
+                                    <a href="#" class="btn_form01 active">저장하기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 점수 ]</h4>
+                        <div class="guide_sub">
+                            <span>- bg01~bg05 클래스로 컬러 변경</span>
+                        </div>
+                        <div class="guide_box">
+                            <span class="btn_score bg01">4.8</span>
+                            <span class="btn_score bg02">3.5</span>
+                            <span class="btn_score bg03">2.8</span>
+                            <span class="btn_score bg04">1.5</span>
+                            <span class="btn_score bg05">0.8</span>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 필터 ]</h4>
+                        <div class="guide_sub">
+                            <span>- list_filter클래스 추가</span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="list_filter">
+                                <div class="filter_left">
+                                    <a href="#" class="filter_item">
+                                        <span class="fil_tit">ICO</span>
+                                        <strong class="btn_up"><span class="blind">up</span></strong>
+                                        <strong class="btn_down"><span class="blind">down</span></strong>
+                                    </a>
+                                </div>
+                                <div class="filter_right">
+                                    <a href="#" class="filter_item">
+                                        <span class="fil_tit">시작일</span>
+                                        <strong class="btn_up"><span class="blind">up</span></strong>
+                                    </a>
+                                    <a href="#" class="filter_item">
+                                        <span class="fil_tit">종료일</span>
+                                        <strong class="btn_down"><span class="blind">down</span></strong>
+                                    </a>
+                                    <a href="#" class="filter_item">
+                                        <span class="fil_tit">평점</span>
+                                        <strong class="btn_up"><span class="blind">up</span></strong>
+                                        <strong class="btn_down"><span class="blind">down</span></strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 검색, select, input ]</h4>
+                        <div class="guide_sub">
+                            <span>- search_box클래스, radio_row클래스, chk_row클래스 추가</span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="search_box_xl">
+                                <input type="search" class="inp_search" placeholder="ICO 검색하기">
+                                <button class="btn_search"><span class="blind">검색</span></button>
+                            </div>
+                            <div class="search_box_sm">
+                                <input type="search" class="inp_search" placeholder="ICO 검색하기">
+                                <button class="btn_search"><span class="blind">검색</span></button>
+                            </div>
+                            <select class="select_box">
+                                <option value="">국가를 선택해주세요</option>
+                                <option value="">대한민국</option>
+                            </select>
+                            <div class="radio_row">
+                                <input class="inp_radio" type="radio" id="radio01" name="radio" checked>
+                                <label for="radio01">예</label>
+                                <input class="inp_radio" type="radio" id="radio02" name="radio">
+                                <label for="radio02">아니오</label>
+                            </div>
+                            <div class="chk_row">
+                                <input class="inp_chkbox" type="checkbox" id="chk01">
+                                <label for="chk01">동의합니다.</label>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 페이지 ]</h4>
+                        <div class="guide_sub">
+                            <span>- 선택 영역 strong 태그 변경 후 active 클래스로 활성화</span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="pagenation">
+                                <ul>
+                                    <li><a href="#" class="first icon_page"><span class="blind">처음으로</span></a></li>
+                                    <li><a href="#" class="prev icon_page"><span class="blind">이전</span></a></li>
+                                    <li><a href="#" class="num">5</a></li>
+                                    <li><a href="#" class="num">6</a></li>
+                                    <li><a href="#" class="num">7</a></li>
+                                    <li><a href="#" class="num">8</a></li>
+                                    <li><strong class="active num">9</strong></li>
+                                    <!-- strong 태그 변경 후 active 클래스로 활성화 -->
+                                    <li><a href="#" class="num">10</a></li>
+                                    <li><a href="#" class="num">11</a></li>
+                                    <li><a href="#" class="num">12</a></li>
+                                    <li><a href="#" class="num">13</a></li>
+                                    <li><a href="#" class="num">14</a></li>
+                                    <li><a href="#" class="next icon_page"><span class="blind">다음</span></a></li>
+                                    <li><a href="#" class="last icon_page"><span class="blind">마지막으로</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 카드형 레이아웃 ]</h4>
+                        <div class="guide_sub">
+                            <span>
+                                - class명 card <br>
+                                - 우측 내용 한 섹션마다 _box 형태의 클래스 div로 묶음
+                            </span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="card">
+                                <div class="thumb">
+                                    <a href="#">
+                                        <img src="../resources/images/w/thumb/thumb_brand01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card_right">
+                                    <a href="#" class="txt_box">
+                                        <strong class="tit">제목 tit 클래스</strong>
+                                        <span class="desc">한줄설명 desc 클래스 desc 클래스 desc 클래스</span>
+                                    </a>
+                                    <div class="word_box">
+                                        <strong class="sub_name">부제목</strong>
+                                        <span class="word">부제목 내용</span>
+                                        <strong class="sub_name bullet">블릿기호</strong>
+                                        <span class="word emp num">4.72</span>
+                                        <span class="sub_name bullet">블릿기호</span>
+                                        <span class="word line_bold">긴 라인</span>
+                                    </div>
+                                    <div class="word_box">
+                                        <span class="word">라인</span>
+                                        <span class="word line">라인</span>
+                                        <span class="word line">라인</span>
+                                    </div>
+                                    <div class="desc_box">
+                                        <span class="longdesc type01">장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01 장문 내용 2줄 제한 longdesc type01</span>
+                                    </div>
+                                    <div class="desc_box">
+                                        <span class="longdesc type02">장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02 장문 내용 3줄 제한 longdesc type02</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <article>
+                    <article class="section">
+                        <h4 class="guide_tit">[ 폼 ]</h4>
+                        <div class="guide_sub">
+                            <span>
+                                - class명 form_wrap<br>
+                                - 기본 width값 815px<br>
+                                - 한 섹션마다 _row 형태의 클래스 div로 묶고, 하위에 _box 형태 클래스로 묶음<br>
+                                - border 들어가있는 영역은 .line 클래스 추가
+                            </span>
+                        </div>
+                        <div class="guide_box">
+                            <div class="guide_inner" style="width:815px; margin:0 auto">
+                                <article class="form_wrap">
+                                    <div class="form_tit_box">
+                                        <h4 class="page_sub_tit">코인정보</h4>
+                                        <strong class="ico_required"><span>필수정보</span></strong>
+                                    </div>
+                                    <strong class="ico_required"><span>필수정보</span></strong>
+                                    <div class="form_row type_info">
+                                        <div class="label_box"><span class="tit">input없이</span></div>
+                                        <div class="input_box"><strong class="desc">텍스트만</strong></div>
+                                    </div>
+                                    <div class="form_row type_text01 long">
+                                        <div class="label_box">
+                                            <span class="tit">긴 제목 + input영역만 테두리</span>
+                                        </div>
+                                        <div class="input_box line">
+                                            <input id="ico_name" type="text" placeholder="괴도월급루팡">
+                                            <strong class="txt_limit">최대 10자</strong>
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_text01 line">
+                                        <div class="label_box">
+                                            <label for="ico_name" class="tit">일반제목</label>
+                                            <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                        </div>
+                                        <div class="input_box">
+                                            <input id="ico_name" type="text" placeholder="김닿아">
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_text01 line short">
+                                        <div class="label_box">
+                                            <label for="link01_1" class="tit">짧은제목</label>
+                                        </div>
+                                        <div class="input_box">
+                                            <input id="link01_1" type="text" placeholder="http://">
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_sel01">
+                                        <div class="label_box">
+                                            <label for="ico_category" class="tit">select 3개</label>
+                                            <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                        </div>
+                                        <div class="sel_box">
+                                            <select id="ico_category">
+                                                <option value="">플랫폼</option>
+                                                <option value="">플랫폼</option>
+                                                <option value="">플랫폼</option>
+                                            </select>
+                                        </div>
+                                        <div class="sel_box">
+                                            <select>
+                                                <option value="">플랫폼</option>
+                                                <option value="">플랫폼</option>
+                                                <option value="">플랫폼</option>
+                                            </select>
+                                        </div>
+                                        <div class="sel_box">
+                                            <select>
+                                                <option value="">플랫폼</option>
+                                                <option value="">플랫폼</option>
+                                                <option value="">플랫폼</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_sel02">
+                                        <div class="label_box">
+                                            <label for="ico_country" class="tit">select 1개</label>
+                                        </div>
+                                        <div class="sel_box">
+                                            <select id="ico_country">
+                                                <option value="">국가선택</option>
+                                                <option value="">대한민국</option>
+                                                <option value="">크로아티아</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_img01">
+                                        <div class="img_box type01">
+                                            <span class="img_size">300*170</span>
+                                            <img src="../resources/images/w/thumb/thumb_brand01.jpg" alt="">
+                                        </div>
+                                        <div class="img_box type02">
+                                            <span class="img_size">130*130</span>
+                                            <img src="../resources/images/w/thumb/thumb_brand_small01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_file01">
+                                        <div class="inner line">
+                                            <div class="label_box">
+                                                <label for="file_name01_1" class="tit">input file 영역 (300*170)</label>
+                                                <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                            </div>
+                                            <div class="input_box">
+                                                <input id="file_name01_1" type="text" placeholder="파일명.JPG" readonly>
+                                                <input id="file_upload01_1" type="file" class="inp_file">
+                                                <label for="file_upload01_1" class="btn_form01">찾아보기</label>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <a href="#" class="btn_form01">삭제</a>
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_file02">
+                                        <div class="img_box type02">
+                                            <span class="img_size">130*130</span>
+                                            <img src="../resources/images/w/thumb/thumb_brand_small01.jpg" alt="">
+                                        </div>
+                                        <div class="inner line">
+                                            <div class="label_box">
+                                                <label for="file_name" class="tit">사진+파일 (130*130)</label>
+                                                <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                            </div>
+                                            <div class="input_box">
+                                                <input id="file_name" type="text" placeholder="파일명.JPG" readonly>
+                                                <input id="file_upload" type="file" class="inp_file">
+                                                <label for="file_upload" class="btn_form01">찾아보기</label>
+                                            </div>
+                                        </div>
+                                        <div class="btn_box">
+                                            <a href="#" class="btn_form01">삭제</a>
+                                        </div>
+                                    </div>
+                                    <div class="form_row notice">
+                                        <span class="txt">파일형식은 jpg, jpeg, gif, png만 업로드 가능합니다.</span>
+                                        <span class="txt">등록 가능한 최대 용량은 5M입니다. </span>
+                                    </div>
+                                    <div class="form_row type_tarea01 short line">
+                                        <div class="label_box">
+                                            <label for="textarea01_1" class="tit">짧은 textarea</label>
+                                            <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                            <span class="txt_count"><span class="emp">0</span>/80</span>
+                                        </div>
+                                        <div class="tarea_box">
+                                            <textarea id="textarea01_1" rows="2" cols="80" class="">내용 입력란 내용 입력란 내용 입력란 내용 입력란 내용 입력란</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form_row type_tarea01 line">
+                                        <div class="label_box">
+                                            <label for="textarea01_2" class="tit">긴 textarea</label>
+                                            <span class="txt_count"><span class="emp">0</span>/1000</span>
+                                        </div>
+                                        <div class="tarea_box">
+                                            <textarea id="textarea01_2" rows="9" cols="80" class="">내용 입력란 내용 입력란 내용 입력란 내용 입력란 내용 입력란</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form_row chk_row">
+                                        <input class="inp_chkbox" type="checkbox" id="chk02">
+                                        <label for="chk02">뉴스레터 수신에 동의하시면 KEDICO에서 제공하는 ICO 정보 및 세미나, 이벤트 등의 안내를 받아보실 수 있습니다.</label>
+                                    </div>
+
+                                </article>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- // container -->
+            <!-- footer -->
+            <div id="footer" class="footer">
+                <span>© 2018 KEDICO. All rights reserved.</span>
+            </div>
+            <!-- // footer -->
+        </div>
+    </body>
+</html>

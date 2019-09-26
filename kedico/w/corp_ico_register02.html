@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>마이페이지_기업 | KEDICO</title>
+        <link rel="stylesheet" type="text/css" href="../resources/css/w/common.css"/>
+        <!--[if lt IE 9]>
+        	<script src="../resources/js/w/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- skip -->
+        <div class="skip_menu">
+      		<a href="#container">본문바로가기</a>
+      	</div>
+      	<!-- //skip -->
+        <div class="wrap">
+            <!-- header -->
+            <header id="header" class="header">
+                <div class="h_top">
+                    <h1 class="h_logo">
+                        <a href="#"><img src="../resources/images/w/logo.png" alt="logo"></a>
+                    </h1>
+                    <div class="h_utility">
+                        <ul>
+                             <li><a href="#">로그인</a></li>
+                             <li><a href="#">고객센터</a></li>
+                             <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="h_bottom">
+                    <div class="gnb">
+                        <ul class="gnb_list">
+                            <li><a href="#">KEDICO란</a></li>
+                            <li class="active"><a href="#">ICO 리스트</a></li>
+                            <li><a href="#">ICO NEWS</a></li>
+                            <li><a href="#">전문위원</a></li>
+                            <!-- active 클래스로 활성화 -->
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- container -->
+            <section id="container" class="container">
+                <div class="contents">
+                    <nav class="con_left">
+                        <div class="con_tit_wrap border">
+                            <h2 class="tit">마이페이지</h2>
+                        </div>
+                        <ul class="lnb">
+                            <li class="active"><a href="#">내 ICO 현황</a></li>
+                            <li><a href="#">부가서비스</a></li>
+                            <li><a href="#">기업정보수정</a></li>
+                            <!-- active 클래스로 활성화 -->
+                        </ul>
+                    </nav>
+                    <div class="con_right my_corp_state">
+                        <div class="con_tit_wrap border">
+                            <h3 class="tit black">ICO 등록</h3>
+                        </div>
+                        <!-- 마이페이지_단계 -->
+                        <ul class="my_step">
+                            <li class="item">
+                                <a href="#">1 코인정보</a>
+                            </li>
+                            <li class="item active">
+                                <a href="#">2 ICO 정보</a>
+                            </li>
+                            <li class="item">
+                                <a href="#">3 SNS 정보</a>
+                            </li>
+                            <!-- active 클래스로 활성화 -->
+                        </ul>
+                        <!-- // 마이페이지_단계 -->
+                        <!-- ico정보 -->
+                        <article class="form_wrap my_ico_info">
+                            <div class="form_tit_box">
+                                <h4 class="page_sub_tit">ICO정보</h4>
+                                <strong class="ico_required"><span>필수정보</span></strong>
+                            </div>
+                            <div class="form_row type_sel02">
+                                <div class="label_box">
+                                    <label for="ico_country" class="tit">ICO 진행국</label>
+                                    <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                </div>
+                                <div class="sel_box">
+                                    <select id="ico_country">
+                                        <option value="">국가선택</option>
+                                        <option value="">대한민국</option>
+                                        <option value="">크로아티아</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="limit_country" class="tit">ICO 제한국</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="limit_country" type="text" placeholder="예시) 북한">
+                                </div>
+                            </div>
+                            <div class="form_row type_date01">
+                                <div class="date_row">
+                                    <div class="label_box">
+                                        <label for="ico_date01_1" class="tit">ICO 진행기간 (1차)</label>
+                                        <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                    </div>
+                                    <div class="input_box">
+                                        <input id="ico_date01_1" type="text">
+                                    </div>
+                                    <div class="dash">-</div>
+                                    <div class="input_box">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="date_row">
+                                    <div class="label_box">
+                                        <label for="ico_date01_2" class="tit">ICO 진행기간 (1차)</label>
+                                        <strong class="ico_required"><span class="blind">필수정보</span></strong>
+                                    </div>
+                                    <div class="input_box">
+                                        <input id="ico_date01_2" type="text">
+                                    </div>
+                                    <div class="dash">-</div>
+                                    <div class="input_box">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="btn_box">
+                                    <button class="btn_form02 plus"><span class="blind">추가</span></button>
+                                    <button class="btn_form02 minus"><span class="blind">삭제</span></button>
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="text01_1" class="tit">투자받는 코인종류</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="text01_1" type="text" placeholder="예시) 이더리움, 이오스 등">
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="text01_2" class="tit">토큰가격</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="text01_2" type="text" placeholder="예시) 1TOKEN = 0.5ETH 식으로 작성">
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="text01_3" class="tit">소프트캡</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="text01_3" type="text" placeholder="예시) 100,000,000 USD">
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="text01_4" class="tit">하드캡</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="text01_4" type="text" placeholder="예시) 100,000,000 USD">
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="text01_5" class="tit">최소투자금액</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="text01_5" type="text" placeholder="예시 ) 100,000,000 USD">
+                                </div>
+                            </div>
+                            <div class="form_row type_text01 line">
+                                <div class="label_box">
+                                    <label for="text01_6" class="tit">바운티 링크</label>
+                                </div>
+                                <div class="input_box">
+                                    <input id="text01_6" type="text" placeholder="http://">
+                                </div>
+                            </div>
+                            <div class="form_row type_sel02">
+                                <div class="label_box">
+                                    <div class="tit_box">
+                                        <!-- 180730 추가 : 필수정보 표시 -->
+                                        <label for="ico_KYC" class="tit">KYC/Whitelist 여부</label>
+                                        <!-- // 180730 추가 : 필수정보 표시 -->
+                                    </div>
+                                </div>
+                                <div class="sel_box">
+                                    <select id="ico_KYC">
+                                        <option value="">KYC만 해당됨</option>
+                                        <option value="">Whitelist만 해당됨</option>
+                                        <option value="">해당없음</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btn_row">
+                                <div class="btn_left">
+                                    <a href="#" class="btn_form01 large left">이전</a>
+                                </div>
+                                <div class="btn_right">
+                                    <strong class="ico_required off">필수정보를 모두 입력해주세요.</strong>
+                                    <a href="#" class="btn_form01 large active">다음</a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- // ico정보 -->
+                    </div>
+                </div>
+                <!-- // contents -->
+            </section>
+            <!-- // container -->
+            <!-- footer -->
+            <footer id="footer" class="footer">
+                <span>© 2018 KEDICO. All rights reserved.</span>
+            </footer>
+            <!-- // footer -->
+        </div>
+        <!-- // wrap -->
+    </body>
+</html>
