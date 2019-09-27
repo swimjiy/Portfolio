@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0"/>
+        <title>ICO리스트 | KEDICO</title>
+        <link rel="stylesheet" type="text/css" href="../resources/css/m/common.css"/>
+    </head>
+    <!-- gnb, 상세검색 활성화 시에 body에 no_fixed_scroll 클래스 추가 -->
+    <body class="no_fixed_scroll">
+        <!-- skip -->
+        <div class="skip_menu">
+      		<a href="#container">본문바로가기</a>
+      	</div>
+        <!-- //skip -->
+        <div class="wrap">
+            <!-- header -->
+            <header id="header" class="header">
+                <h1 class="logo">
+                    <a href="#"><img src="../resources/images/m/logo.png" alt="KEDICO"></a>
+                </h1>
+                <div class="btn_menu">
+                    <a href="#"><span class="blind">메뉴</span></a>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- gnb: 활성화 시에 body에 no_fixed_scroll 클래스 추가 및 gnb에 active 클래스 추가 -->
+            <nav class="gnb">
+                <div class="gnb_logo">
+                    <a href="#"><img src="../resources/images/m/logo_red.png" alt="KEDICO"></a>
+                </div>
+                <div class="gnb_inner">
+                    <ul class="gnb_list">
+                        <li><a href="#">HOME</a></li>
+                        <li class="active"><a href="#">KEDICO 소개</a></li>
+                        <li><a href="#">ICO리스트</a></li>
+                        <li><a href="#">전문위원</a></li>
+                        <li><a href="#">ICO뉴스</a></li>
+                        <!-- 비회원일 때 -->
+                        <li><a href="#">로그인 / 회원가입</a></li>
+                        <!-- //비회원일 때 -->
+                        <!-- 개인회원일 때 -->
+                        <li><a href="#">개인정보 수정</a></li>
+                        <!-- //개인회원일 때 -->
+                        <!-- 전문회원일 때 -->
+                        <li><a href="#">개인정보 수정</a></li>
+                        <li><a href="#">내 평가 리스트</a></li>
+                        <!-- //전문회원일 때 -->
+                        <!-- 기업회원일 때 -->
+                        <li><a href="#">개인정보 수정</a></li>
+                        <li><a href="#">내 ICO 현황</a></li>
+                        <!-- //기업회원일 때 -->
+                    </ul>
+                </div>
+                <ul class="gnb_bottom">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <button type="button" class="btn_close">
+                    <span class="blind">닫기</span>
+                </button>
+            </nav>
+            <div class="mask"></div>
+            <!-- // gnb -->
+            <!-- 상세검색 클릭 시 body에 no_fixed_scroll 클래스 추가 및 search_details_wrap 클래스에 active 클래스 추가 -->
+            <section class="search_details_wrap active">
+                <div class="details_header">
+                    <h2 class="tit">상세검색</h2>
+                    <button class="btn_close"><span class="blind">닫기</span></button>
+                </div>
+                <div class="details_contents">
+                    <div class="search_bar">
+                        <input type="search" class="inp_search" placeholder="ICO 검색하기">
+                        <button class="btn_search"><span class="blind">검색</span></button>
+                    </div>
+                    <strong class="sub_tit">카테고리</strong>
+                    <div class="option_box">
+                        <a href="#" class="btn_option">플랫폼</a>
+                        <a href="#" class="btn_option active">비즈니스</a>
+                        <a href="#" class="btn_option">투자</a>
+                        <a href="#" class="btn_option">소프트웨어</a>
+                        <a href="#" class="btn_option">인터넷</a>
+                        <a href="#" class="btn_option active">정치</a>
+                        <a href="#" class="btn_option">결제</a>
+                        <a href="#" class="btn_option">천연자원</a>
+                        <a href="#" class="btn_option">송금</a>
+                    </div>
+                    <strong class="sub_tit">옵션</strong>
+                    <div class="option_box">
+                        <a href="#" class="btn_option">깃허브</a>
+                        <a href="#" class="btn_option active">바운티</a>
+                        <a href="#" class="btn_option">KYC</a>
+                        <a href="#" class="btn_option active">백서</a>
+                    </div>
+                    <strong class="sub_tit">국가</strong>
+                    <div class="inp_box sel_nation">
+                        <select id="sel02_1" class="inp_sel" name="sel01">
+                            <option value="">국가를 선택해 주세요.</option>
+                            <option value="">대한민국</option>
+                        </select>
+                    </div>
+                    <strong class="sub_tit">시작일</strong>
+                    <div class="inp_box col2">
+                        <input id="inp01_1" class="inp_date" type="text">
+                        <input id="inp01_2" class="inp_date" type="text">
+                    </div>
+                    <strong class="sub_tit">상태</strong>
+                    <div class="option_box">
+                        <a href="#" class="btn_option active">ICO예정</a>
+                        <a href="#" class="btn_option">ICO진행중</a>
+                        <a href="#" class="btn_option">종료된 ICO</a>
+                    </div>
+                    <strong class="sub_tit">평점</strong>
+                    <div class="range_wrap">
+                        <div class="range_box">
+                            <input class="inp_range" type="range" min="0" max="5" value="1">
+                            <ul class="range_num">
+                                <li>0</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                        <div class="range_value">
+                            <span>2.2</span>
+                            <span class="wave">~</span>
+                            <span>3.1</span>
+                        </div>
+                    </div>
+                    <div class="btn_row">
+                        <button type="button" class="btn_round">검색하기</button>
+                    </div>
+                </div>
+            </section>
+            <!-- // 상세검색 -->
+            <!-- container -->
+            <section id="container" class="container">
+                <div class="contents">
+                    <div class="search_box">
+                        <div class="search_bar">
+                            <input type="search" class="inp_search" placeholder="ICO 검색하기">
+                            <button class="btn_search"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                    <!-- 검색영역 -->
+                    <div class="sub_tit_wrap">
+                        <h3 class="sub_tit">검색옵션</h3>
+                    </div>
+                    <div class="cont_box ico_list">
+                        <div class="record_box">
+                            <a href="#" class="btn_record">비즈니스<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">인터넷<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">송금<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">KYC<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">백서<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">ICO예정<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">KYC<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">백서<span class="blind">삭제</span></a>
+                        </div>
+                        <div class="inp_box">
+                            <select class="inp_sel" name="sel01" id="sel01">
+                                <option value="">정렬</option>
+                                <option value="">오름차순</option>
+                                <option value="">내림차순</option>
+                            </select>
+                        </div>
+                        <ul class="card_list">
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">DatablockchainDatablockchain(PreICO)</strong>
+                                            <span class="btn_score bg03">2.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료거래소 운영 거래소 운영 마켓을 임대받아 수수료거래소 운영 마켓을 임대받아 수수료거래소 운영 마켓을 임대받아 수수료마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                    <a href="#" class="btn_keyword">백서</a>
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">비즈니스</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">AutoBay</strong>
+                                            <span class="btn_score bg02">3.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">Datablockchain(PreICO)</strong>
+                                            <span class="btn_score bg04">1.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">AutoBay</strong>
+                                            <span class="btn_score bg01">4.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">Datablockchain(PreICO)</strong>
+                                            <span class="btn_score bg03">2.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">AutoBay</strong>
+                                            <span class="btn_score bg02">3.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">Datablockchain(PreICO)</strong>
+                                            <span class="btn_score bg04">1.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">AutoBay</strong>
+                                            <span class="btn_score bg01">4.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">Datablockchain(PreICO)</strong>
+                                            <span class="btn_score bg04">1.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <a href="#">
+                                    <div class="card_top">
+                                        <div class="thumb">
+                                            <div class="inner">
+                                                <img src="../resources/images/m/thumb/thumb_brand01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card_right">
+                                            <strong class="tit line02">AutoBay</strong>
+                                            <span class="btn_score bg01">4.8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="desc_box">
+                                    <span class="longdesc line02">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓을 임대받아 수수료</span>
+                                </div>
+                                <div class="date_box">
+                                    <span class="date"><strong class="sub_tit">시작</strong>2018.05.30</span>
+                                    <span class="date"><strong class="sub_tit">종료</strong>2018.05.30</span>
+                                </div>
+                                <div class="keyword_box">
+                                    <a href="#" class="btn_keyword">ING</a>
+                                    <a href="#" class="btn_keyword">ETC</a>
+                                    <a href="#" class="btn_keyword">KYC</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="more_btn_row">
+                            <a href="#" class="btn_more">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // container -->
+            <!-- footer -->
+            <footer id="footer" class="footer">
+                <span>© 2018 KEDICO. All rights reserved.</span>
+            </footer>
+            <!-- // footer -->
+            <!-- top버튼 -->
+            <div class="btn_top">
+                <a href="#"><img src="../resources/images/m/ico/ico_top.png" alt="TOP"></a>
+            </div>
+            <!-- top버튼 -->
+        </div>
+    </body>
+</html>

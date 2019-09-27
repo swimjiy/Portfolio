@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>List | KEDICO</title>
+        <link rel="stylesheet" type="text/css" href="../resources/css/w/common.css"/>
+        <!--[if lt IE 9]>
+        	<script src="../resources/js/w/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- skip -->
+        <div class="skip_menu">
+      		<a href="#container">본문바로가기</a>
+      	</div>
+      	<!-- //skip -->
+        <div class="wrap">
+            <!-- header -->
+            <header id="header" class="header">
+                <div class="h_top">
+                    <h1 class="h_logo">
+                        <a href="#"><img src="../resources/images/w/logo.png" alt="logo"></a>
+                    </h1>
+                    <div class="h_utility">
+                        <ul>
+                             <li><a href="#">로그인</a></li>
+                             <li><a href="#">고객센터</a></li>
+                             <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="h_bottom">
+                    <div class="gnb">
+                        <ul class="gnb_list">
+                            <li><a href="#">KEDICO란</a></li>
+                            <li class="active"><a href="#">ICO 리스트</a></li>
+                            <li><a href="#">ICO NEWS</a></li>
+                            <li><a href="#">전문위원</a></li>
+                            <!-- active 클래스로 활성화 -->
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- // header -->
+            <!-- container -->
+            <section id="container" class="container">
+                <div class="contents">
+                    <div class="con_tit_wrap">
+                        <h2 class="tit">ICO 리스트</h2>
+                    </div>
+                    <!-- 검색영역 -->
+                    <div class="search_wrap">
+                        <div class="search_bar active"><!-- 180731 수정 : search_bar active 클래스로 상세검색창 제어 -->
+                            <div class="search_box_xl">
+                                <input type="search" class="inp_search" placeholder="ICO 검색하기">
+                                <button class="btn_search"><span class="blind">검색</span></button>
+                            </div>
+                        </div>
+                        <!-- 상세검색영역 -->
+                        <div class="search_category">
+                            <ul class="category_list">
+                                <li class="category_item">
+                                    <div class="cate_left">
+                                        <span class="cate_tit">카테고리</span>
+                                    </div>
+                                    <div class="cate_right">
+                                        <a href="#" class="btn_square">플랫폼</a>
+                                        <a href="#" class="btn_square active">비즈니스</a>
+                                        <a href="#" class="btn_square">투자</a>
+                                        <a href="#" class="btn_square">소프트웨어</a>
+                                        <a href="#" class="btn_square active">인터넷</a>
+                                        <a href="#" class="btn_square">정치</a>
+                                        <a href="#" class="btn_square">결제</a>
+                                        <a href="#" class="btn_square">천연자원</a>
+                                        <a href="#" class="btn_square">송금</a>
+                                        <a href="#" class="btn_square">소프트웨어</a>
+                                        <a href="#" class="btn_square active">인터넷</a>
+                                        <a href="#" class="btn_square">정치</a>
+                                        <a href="#" class="btn_square">결제</a>
+                                        <a href="#" class="btn_square">천연자원</a>
+                                        <a href="#" class="btn_square">송금</a>
+                                    </div>
+                                    <!-- active 클래스로 활성화 -->
+                                </li>
+                                <li class="category_item">
+                                    <div class="cate_left">
+                                        <span class="cate_tit">옵션</span>
+                                    </div>
+                                    <div class="cate_right">
+                                        <a href="#" class="btn_square">깃허브</a>
+                                        <a href="#" class="btn_square">바운티</a>
+                                        <a href="#" class="btn_square active">KYC</a>
+                                        <a href="#" class="btn_square active">백서</a>
+                                    </div>
+                                    <!-- active 클래스로 활성화 -->
+                                </li>
+                                <li class="category_item">
+                                    <div class="cate_left">
+                                        <span class="cate_tit">국가</span>
+                                    </div>
+                                    <div class="cate_right">
+                                        <select class="select_box">
+                                          <option value="">국가를 선택해주세요</option>
+                                          <option value="">대한민국</option>
+                                        </select>
+                                    </div>
+                                    <div class="cate_left">
+                                        <span class="cate_tit">시작일</span>
+                                    </div>
+                                    <div class="cate_right">
+                                        <select class="select_box short">
+                                            <option value="">2018.06.18</option>
+                                        </select>
+                                    </div>
+                                    <!-- 180801 수정 : 종료일 추가 -->
+                                    <div class="cate_left">
+                                        <span class="cate_tit">종료일</span>
+                                    </div>
+                                    <div class="cate_right">
+                                        <select class="select_box short">
+                                            <option value="">2018.06.18</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="category_item">
+                                    <div class="cate_left">
+                                        <span class="cate_tit">상태</span>
+                                    </div>
+                                    <div class="cate_right">
+                                        <a href="#" class="btn_square active">ICO예정</a>
+                                        <a href="#" class="btn_square">ICO진행중</a>
+                                        <a href="#" class="btn_square">종료된ICO</a>
+                                    </div>
+                                    <!-- active 클래스로 활성화 -->
+                                </li>
+                                <li class="category_item">
+                                    <div class="cate_left">
+                                        <span class="cate_tit">평점</span>
+                                    </div>
+                                    <div class="cate_right range_wrap">
+                                        <div class="range_box">
+                                            <input class="inp_range" type="range" min="0" max="5" value="1">
+                                            <ul class="range_num">
+                                                <li>0</li>
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5<li>
+                                            </ul>
+                                        </div>
+                                        <div class="range_value">
+                                            <span>2.2</span>
+                                            <span class="wave">~</span>
+                                            <span>3.1</span>
+                                        </div>
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 상세검색영역 -->
+                    </div>
+                    <!-- // 검색영역 -->
+                    <!-- 180731 수정 : 선택옵션 영역 디자인 변경 -->
+                    <!-- 선택옵션 영역 -->
+                    <div class="record_wrap">
+                        <div class="record_box">
+                            <a href="#" class="btn_record">비즈니스<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">인터넷<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">송금<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">KYC<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">백서<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">ICO예정<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">비즈니스<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">인터넷<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">송금<span class="blind">삭제</span></a>
+                            <a href="#" class="btn_record">KYC<span class="blind">삭제</span></a>
+                        </div>
+                        <div class="btn_box">
+                            <a href="#" class="btn_search02">검색하기</a>
+                        </div>
+                    </div>
+                    <!-- 선택옵션 영역 -->
+                    <!-- 본문영역 -->
+                    <div class="section">
+                        <!-- 필터 -->
+                        <div class="list_filter ico_list_filter">
+                            <div class="filter_left">
+                                <a href="#" class="filter_item">
+                                    <span class="fil_tit">ICO</span>
+                                    <strong class="btn_up"><span class="blind">up</span></strong>
+                                    <strong class="btn_down"><span class="blind">down</span></strong>
+                                </a>
+                            </div>
+                            <div class="filter_right">
+                                <a href="#" class="filter_item">
+                                    <span class="fil_tit">시작일</span>
+                                    <strong class="btn_up"><span class="blind">up</span></strong>
+                                </a>
+                                <a href="#" class="filter_item">
+                                    <span class="fil_tit">종료일</span>
+                                    <strong class="btn_down"><span class="blind">down</span></strong>
+                                </a>
+                                <a href="#" class="filter_item">
+                                    <span class="fil_tit">평점</span>
+                                    <strong class="btn_up"><span class="blind">up</span></strong>
+                                    <strong class="btn_down"><span class="blind">down</span></strong>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- // 필터 -->
+                        <!-- 결과 -->
+                        <ul class="ico_result_list">
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">다하 COIN</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼</span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword status">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                            <a href="#" class="btn_keyword">KYC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg01">4.1</span>
+                                    <!-- bg01~bg05 클래스로 컬러 변경 -->
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">Casper API (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓</span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg02">3.6</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">WPP (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 </span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg03">2.8</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">WPP (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 </span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg04">1.9</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">다하 COIN</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼</span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                            <a href="#" class="btn_keyword">KYC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg01">4.1</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">Casper API (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓</span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg02">3.6</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">WPP (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 </span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg03">2.8</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">WPP (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 </span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg04">1.9</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">다하 COIN</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를  가져가는 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼 거래소 운영 마켓을 임대받아 수수료를 가져가는 거래소 운영 플랫폼</span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                            <a href="#" class="btn_keyword">백서</a>
+                                            <a href="#" class="btn_keyword">KYC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg01">4.1</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="card">
+                                    <div class="thumb">
+                                        <a href="#">
+                                            <img src="../resources/images/w/thumb/thumb_brand02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card_right">
+                                        <a href="#" class="txt_box">
+                                            <strong class="tit">Casper API (PreICO)</strong>
+                                            <span class="longdesc type01">마켓을 임대받아 수수료를 가져가는 거래소 운영 마켓</span>
+                                        </a>
+                                        <div class="keyword_box">
+                                            <a href="#" class="btn_keyword">ING</a>
+                                            <a href="#" class="btn_keyword">ETC</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_date">
+                                    <span class="date">2018.05.30</span>
+                                </div>
+                                <div class="ico_score">
+                                    <span class="btn_score bg02">3.6</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- // 결과 -->
+                        <!-- 180731 수정 : 페이지 영역 전체 수정 -->
+                        <div class="pagenation">
+                            <ul>
+                                <li><a href="#" class="first icon_page"><span class="blind">처음으로</span></a></li>
+                                <li><a href="#" class="prev icon_page"><span class="blind">이전</span></a></li>
+                                <li><a href="#" class="num">5</a></li>
+                                <li><a href="#" class="num">6</a></li>
+                                <li><a href="#" class="num">7</a></li>
+                                <li><a href="#" class="num">8</a></li>
+                                <li><strong class="active num">9</strong></li>
+                                <!-- strong 태그 변경 후 active 클래스로 활성화 -->
+                                <li><a href="#" class="num">10</a></li>
+                                <li><a href="#" class="num">11</a></li>
+                                <li><a href="#" class="num">12</a></li>
+                                <li><a href="#" class="num">13</a></li>
+                                <li><a href="#" class="num">14</a></li>
+                                <li><a href="#" class="next icon_page"><span class="blind">다음</span></a></li>
+                                <li><a href="#" class="last icon_page"><span class="blind">마지막으로</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- // 180731 수정 : 페이지 영역 전체 수정 -->
+                    </div>
+                    <!-- 본문영역 -->
+                </div>
+            </section>
+            <!-- // container -->
+            <!-- footer -->
+            <footer id="footer" class="footer">
+                <span>© 2018 KEDICO. All rights reserved.</span>
+            </footer>
+            <!-- // footer -->
+        </div>
+        <!-- // wrap -->
+    </body>
+</html>
