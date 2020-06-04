@@ -71,7 +71,7 @@ import NavLink from '@/components/NavLink.vue'
                 description: 'SW 아카데미 42SEOUL의 팀 프로젝트로 진행한 반응형 웹입니다. 디자인 및 프로트엔드 개발을 담당했으며 그래프 제작을 위해 D3.js를 사용했습니다.',
                 date: '2020.04 ~ 2020.05',
                 hash: ['HTML', 'CSS', 'JavaScript', 'D3.js'],
-                image: 'project-cart.png',
+                image: 'project-cart.jpeg',
                 url: 'http://www.cartsavior.ga/'
             },
             {
