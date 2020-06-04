@@ -1,21 +1,23 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Portfolio
 
->  2019 ver.
+웹 프론트엔드 개발자 포트폴리오입니다. 🚀
 
-=======
-=======
->>>>>>> parent of 108c813... nuxt init
+
+
+## Build With
+
+- Vue.js
+- Nuxt.js
+- Scss
+
+
+
 ## Build Setup
->>>>>>> parent of 108c813... nuxt init
 
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-<<<<<<< HEAD
-Design : PhotoShopCC, Zeplin
-
-Develop : Vue.js, Vue Router
-=======
 # serve with hot reload at localhost:3000
 $ npm run dev
 
@@ -26,9 +28,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-<<<<<<< HEAD
->>>>>>> parent of 108c813... nuxt init
-=======
->>>>>>> parent of 108c813... nuxt init

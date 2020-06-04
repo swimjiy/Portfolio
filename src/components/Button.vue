@@ -15,16 +15,16 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '@/styles/app.scss';
+@import '@/assets/scss/app.scss';
 .rounded {
   border-radius: 10px;
 }
 .nav_link {
   display: inline-block;
-  margin-top: 4.7rem;
+  margin-top: 4.7em;
   padding: 9px 23px;
   box-shadow: 0,0,0,0;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: 500;
   letter-spacing: 0.17px;
   text-align: left;

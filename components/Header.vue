@@ -1,8 +1,8 @@
-<!--<template>
+<template>
     <header class="header">
         <h1 class="logo">
             <nuxt-link to='/'>
-                <img src="../assets/images/logo.png" alt="logo" class="logo_image">
+                <img src="~assets/images/logo.png" alt="logo" class="logo_image">
             </nuxt-link>
         </h1>
         <ul class="navbar_list">
@@ -27,12 +27,12 @@ export default {
             routerLinks: [
                 {
                     name: 'about',
-                    url: '/ABOUT',
+                    url: '/about',
                     key: 0,
                 },
                 {
                     name: 'project',
-                    url: '/PROJECT',
+                    url: '/project',
                     key: 1,
                 },
             ]
@@ -89,4 +89,4 @@ export default {
 }
 
 
-</style>-->
+</style>
