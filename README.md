@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Portfolio
 
 >  2019 ver.
 
 =======
+=======
+>>>>>>> parent of 108c813... nuxt init
 ## Build Setup
 >>>>>>> parent of 108c813... nuxt init
 
@@ -25,4 +28,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+<<<<<<< HEAD
+>>>>>>> parent of 108c813... nuxt init
+=======
 >>>>>>> parent of 108c813... nuxt init
