@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import '@/styles/footer.scss';
+
 export default {
     name: 'Footer',
     data() {
@@ -37,50 +39,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss" scoped>
-@import '@/assets/scss/colors.scss';
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 0em;
-    z-index: 10;
-
-    .sns_list {
-        position: fixed;
-        bottom: 4em;
-        left: 4em;
-        .sns_item {
-            padding-top: 2em;
-            a {
-                display: block;
-                width: 2.4em;
-                height: 2.4em;
-                font-size: 1.2em;
-                color: $dark;
-            }
-            a:hover {
-                opacity: 0.7;
-            }
-            .sns_github {
-                background-image: url('../assets/images/icon_github.svg');
-                background-size: cover;
-            }
-            .sns_linkedin {
-                background-image: url('../assets/images/icon_linkedin.svg');
-                background-size: cover;
-            }
-            .sns_email {
-                background-image: url('../assets/images/icon_mail.svg');
-                background-size: cover;
-            }
-        }
-    }
-}
-
-
-</style>

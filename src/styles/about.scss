@@ -1,0 +1,170 @@
+@import '@/styles/app.scss';
+// @import '../assets/img_home.svg';
+
+.thumb {
+    width: 100%;
+    height: 100%;
+    max-width: 50rem;
+}
+.about_label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $blue;
+    .label_icon {
+        // width: 2rem;
+        // height: 2rem;
+        // border-radius: 50%;
+        // background-color: $blue;
+    }
+    .label_line {
+        width: 2.3rem;
+        height: 0.1rem;
+        margin: 0 1rem;
+        background-color: $blue;
+    }
+    .label_text {
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-style: normal;
+        text-align: left;
+        color: $blue;
+    }
+}
+.about_description {
+    margin-top: 3.4rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2;
+    text-align: left;
+    color: $dark;
+    .text_bold {
+        font-weight: 500;
+    }
+}
+.about_hash_list {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    // justify-content: space-between;
+    .hash_item {
+        // display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-style: normal;
+        text-align: left;
+        color: $blue;
+    }
+}
+.item_button {
+    display: inline-block;
+    margin-top: 4.7rem;
+    padding: 9px 23px;
+    box-shadow: 0,0,0,0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.17px;
+    text-align: left;
+    color: #3a61f5;
+    border: 0;
+    background-color: $lightBlue;
+}
+.skills_item {
+    padding: 2rem;
+    height: 40rem;
+    margin: 10px;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
+}
+.about_button {
+    margin-bottom: 5rem;
+}
+.skills_title {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: $blue;
+    text-align: right;
+}
+.sns_list {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    .sns_item {
+        padding-right: 2rem;
+        a {
+            display: block;
+            // width: 2.4rem;
+            height: 2.4rem;
+            padding-left: 3rem;
+            font-size: 1.2rem;
+            color: $dark;
+            font-size: 1.4rem;
+            font-weight: 500;
+            font-style: normal;
+            color: $blue;
+            transition: all 0.3s;
+        }
+        a:hover {
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        .sns_github {
+            background-image: url('../assets/icon_github.svg');
+            background-size: auto 100%;
+            background-position: left center;
+        }
+        .sns_blog {
+            background-image: url('../assets/icon_blog.svg');
+            background-size: auto 100%;
+            background-position: left center;
+        }
+        .sns_email {
+            background-image: url('../assets/icon_mail.svg');
+            background-size: auto 100%;
+            background-position: left center;
+        }
+    }
+}
+.skills_detail_list {
+    text-align: left;
+    .skills_detail_item {
+        position: relative;
+        margin-top: 1rem;
+        line-height: 3.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $dark;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #cee1ff;
+        }
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 25%;
+            height: 3px;
+            background-color: $blue;
+        }
+        &.beginner:before{
+            width: 25%;
+        }
+        &.intermediate:before{
+            width: 50%;
+        }
+        &.expert:before{
+            width: 80%;
+        }
+    }
+}

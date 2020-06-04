@@ -1,0 +1,33 @@
+@import '@/styles/app.scss';
+
+.home_title {
+  padding: 0 3rem;
+  font-size: 6rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: 0.72px;
+  text-align: left;
+  color: $dark;
+  &.title_left {
+    text-align: left;
+  }
+  &.title_right {
+    text-align: right;
+  }
+  .text_bold {
+    font-weight: 500;
+  }
+  .text_blue {
+    color: $blue;
+  }
+}
+.home_thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 65rem;
+  height: 16rem;
+  margin: 0 auto;
+}

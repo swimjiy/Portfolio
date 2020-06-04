@@ -1,4 +1,5 @@
 # Portfolio
+<<<<<<< HEAD
 
 웹 프론트엔드 개발자 포트폴리오입니다. 🚀
 
@@ -13,18 +14,19 @@
 
 
 ## Build Setup
+=======
+>>>>>>> parent of 2b488e1... Apply nuxt
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+>  2019 ver.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
 
+<<<<<<< HEAD
 # generate static project
 $ npm run generate
 ```
+=======
+Design : PhotoShopCC, Zeplin
+
+Develop : Vue.js, Vue Router
+>>>>>>> parent of 2b488e1... Apply nuxt
