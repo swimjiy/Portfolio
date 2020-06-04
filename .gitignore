@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 notes.txt
-/dist
+# /dist
 
 /tests/e2e/reports/
 selenium-debug.log

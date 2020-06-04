@@ -1,15 +1,6 @@
 import Vue from 'vue'
-
-import {
-  getMatchedComponentsInstances,
-  getChildrenComponentInstancesUsingFetch,
-  promisify,
-  globalHandleError,
-  sanitizeComponent
-} from './utils'
-
+import { getMatchedComponentsInstances, promisify, globalHandleError } from './utils'
 import NuxtLoading from './components/nuxt-loading.vue'
-import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/swiper/dist/css/swiper.css'
 
@@ -17,19 +8,20 @@ import '../assets/scss/app.scss'
 
 import _6f6c098b from '../layouts/default.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_default": _6f6c098b }
 
 export default {
-  render (h, props) {
-    const loadingEl = h('NuxtLoading', { ref: 'loading' })
+  head: {"title":"portfolio","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Jiyoung Lim&apos;s portfolio"},{"hid":"author","name":"author","content":"Jiyoung Lim \u003Cvivid8222@gmail.com\u003E"},{"hid":"og:type","name":"og:type","content":"blog"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Fportfolio\u002Ffavicon.ico"}],"style":[],"script":[]},
 
+  render(h, props) {
+    const loadingEl = h('NuxtLoading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')
     const templateEl = h('div', {
       domProps: {
         id: '__layout'
       },
       key: this.layoutName
-    }, [layoutEl])
+    }, [ layoutEl ])
 
     const transitionEl = h('transition', {
       props: {
@@ -37,45 +29,35 @@ export default {
         mode: 'out-in'
       },
       on: {
-        beforeEnter (el) {
+        beforeEnter(el) {
           // Ensure to trigger scroll event after calling scrollBehavior
           window.$nuxt.$nextTick(() => {
             window.$nuxt.$emit('triggerScroll')
           })
         }
       }
-    }, [templateEl])
+    }, [ templateEl ])
 
     return h('div', {
       domProps: {
         id: '__nuxt'
       }
-    }, [
-      loadingEl,
-      h(NuxtBuildIndicator),
-      transitionEl
-    ])
+    }, [loadingEl, transitionEl])
   },
-
   data: () => ({
     isOnline: true,
-
     layout: null,
-    layoutName: '',
-
-    nbFetching: 0
-    }),
-
-  beforeCreate () {
+    layoutName: ''
+  }),
+  beforeCreate() {
     Vue.util.defineReactive(this, 'nuxt', this.$options.nuxt)
   },
-  created () {
+  created() {
     // Add this.$nuxt in child instances
     Vue.prototype.$nuxt = this
     // add to window so we can listen when ready
     if (process.client) {
       window.$nuxt = this
-
       this.refreshOnlineStatus()
       // Setup the listeners
       window.addEventListener('online', this.refreshOnlineStatus)
@@ -87,7 +69,7 @@ export default {
     this.context = this.$options.context
   },
 
-  mounted () {
+  mounted() {
     this.$loading = this.$refs.loading
   },
   watch: {
@@ -95,17 +77,12 @@ export default {
   },
 
   computed: {
-    isOffline () {
+    isOffline() {
       return !this.isOnline
-    },
-
-      isFetching() {
-      return this.nbFetching > 0
     }
   },
-
   methods: {
-    refreshOnlineStatus () {
+    refreshOnlineStatus() {
       if (process.client) {
         if (typeof window.navigator.onLine === 'undefined') {
           // If the browser doesn't support connection status reports
@@ -117,31 +94,19 @@ export default {
         }
       }
     },
-
-    async refresh () {
+    async refresh() {
       const pages = getMatchedComponentsInstances(this.$route)
 
       if (!pages.length) {
         return
       }
       this.$loading.start()
-
-      const promises = pages.map((page) => {
+      const promises = pages.map(async (page) => {
         const p = []
 
-        // Old fetch
-        if (page.$options.fetch && page.$options.fetch.length) {
+        if (page.$options.fetch) {
           p.push(promisify(page.$options.fetch, this.context))
         }
-        if (page.$fetch) {
-          p.push(page.$fetch())
-        } else {
-          // Get all component instance to call $fetch
-          for (const component of getChildrenComponentInstancesUsingFetch(page.$vnode.componentInstance)) {
-            p.push(component.$fetch())
-          }
-        }
-
         if (page.$options.asyncData) {
           p.push(
             promisify(page.$options.asyncData, this.context)
@@ -152,35 +117,26 @@ export default {
               })
           )
         }
-
         return Promise.all(p)
       })
       try {
         await Promise.all(promises)
       } catch (error) {
-        this.$loading.fail(error)
+        this.$loading.fail()
         globalHandleError(error)
         this.error(error)
       }
       this.$loading.finish()
     },
 
-    errorChanged () {
+    errorChanged() {
       if (this.nuxt.err && this.$loading) {
-        if (this.$loading.fail) {
-          this.$loading.fail(this.nuxt.err)
-        }
-        if (this.$loading.finish) {
-          this.$loading.finish()
-        }
+        if (this.$loading.fail) this.$loading.fail()
+        if (this.$loading.finish) this.$loading.finish()
       }
     },
 
-    setLayout (layout) {
-      if(layout && typeof layout !== 'string') {
-        throw new Error('[nuxt] Avoid using non-string value as layout property.')
-      }
-
+    setLayout(layout) {
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
@@ -188,14 +144,13 @@ export default {
       this.layout = layouts['_' + layout]
       return this.layout
     },
-    loadLayout (layout) {
+    loadLayout(layout) {
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
       return Promise.resolve(layouts['_' + layout])
     }
   },
-
   components: {
     NuxtLoading
   }
