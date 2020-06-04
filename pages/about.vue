@@ -28,7 +28,7 @@
                         </a>
                     </li>
                 </ul>
-                <NavigationLink url="www.naver.com" class="about_button">See resume</NavigationLink>
+                <!-- <NavigationLink url="www.naver.com" class="about_button">See resume</NavigationLink> -->
             </div>
         </section>
         <section class="section">
@@ -81,19 +81,19 @@ export default {
             snsLinks: [
                 {
                     name: 'github',
-                    url: 'https://github.com/sumim00',
+                    url: 'https://github.com/swimjiy',
                     target: '_blank',
                     key: 0,
                 },
                 {
                     name: 'blog',
-                    url: 'https://sumim00.github.io/',
+                    url: 'https://swimjiy.github.io/',
                     target: '_blank',
                     key: 1,
                 },
                 {
                     name: 'email',
-                    url: 'mailto:vivid8222@gmail.com',
+                    url: 'mailto:swimjiy@gmail.com',
                     target: '_blank',
                     key: 2,
                 },
@@ -112,7 +112,15 @@ export default {
                         },
                         {
                             name: 'JavaScript',
+                            level: 'intermediate',
+                        },
+                        {
+                            name: 'TypeScript',
                             level: 'beginner',
+                        },
+                        {
+                            name: 'C',
+                            level: 'intermediate',
                         },
                     ]
                 },
@@ -136,12 +144,12 @@ export default {
                             level: 'intermediate',
                         },
                         {
-                            name: 'Bootstrap4',
-                            level: 'expert',
-                        },
-                        {
                             name: 'jQuery',
                             level: 'intermediate',
+                        },
+                        {
+                            name: 'D3.js',
+                            level: 'beginner',
                         },
                     ]
                 },
@@ -154,6 +162,10 @@ export default {
                         },
                         {
                             name: 'Illustrator',
+                            level: 'beginner',
+                        },
+                        {
+                            name: 'Sketch',
                             level: 'beginner',
                         },
                     ]
@@ -175,10 +187,6 @@ export default {
                         },
                         {
                             name: 'SVN',
-                            level: 'expert',
-                        },
-                        {
-                            name: 'Zeplin',
                             level: 'expert',
                         },
                     ]

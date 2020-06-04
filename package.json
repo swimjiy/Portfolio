@@ -26,5 +26,16 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0",
     "push-dir": "^0.4.1"
-  }
+  },
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swimjiy/Portfolio.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swimjiy/Portfolio/issues"
+  },
+  "homepage": "https://github.com/swimjiy/Portfolio#readme",
+  "keywords": []
 }

@@ -1,6 +1,16 @@
-# portfolio
+# Portfolio
 
-> jiyoung's portfolio
+웹 프론트엔드 개발자 포트폴리오입니다. 🚀
+
+
+
+## Build With
+
+- Vue.js
+- Nuxt.js
+- Scss
+
+
 
 ## Build Setup
 
@@ -18,6 +28,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-

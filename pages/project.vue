@@ -66,13 +66,22 @@ import NavLink from '@/components/NavLink.vue'
         // ],
         banners: [
             {
+                title: '농수축산물 시세 찾기 Cart Savior',
+                subTitle: '기여도 : 40%',
+                description: 'SW 아카데미 42SEOUL의 팀 프로젝트로 진행한 반응형 웹입니다. 디자인 및 프로트엔드 개발을 담당했으며 그래프 제작을 위해 D3.js를 사용했습니다.',
+                date: '2020.04 ~ 2020.05',
+                hash: ['HTML', 'CSS', 'JavaScript', 'D3.js'],
+                image: 'project-cart.png',
+                url: 'http://www.cartsavior.ga/'
+            },
+            {
                 title: '문화생활 기록 앱 CULOR',
                 subTitle: '기여도 : 50%',
                 description: 'IT 연합 동아리 NEXTERS 15기 활동으로 제작한 앱입니다. ios와 안드로이드 호환이 가능한 React Native로 제작했으며, state관리를 위해 Redux 및 Redux-saga를 사용했습니다.',
                 date: '2019.07 ~ 2019.08',
                 hash: ['React Native', 'Redux', 'Redux-saga', 'expo'],
                 image: 'project_culor.jpg',
-                url: ''
+                url: 'https://github.com/Nexters/CultureLand-Android'
             },
             {
                 title: 'DOUZONE 웹 빌더',
@@ -175,6 +184,7 @@ import NavLink from '@/components/NavLink.vue'
     }
   }
   .project_item {
+      padding: 0 20px;
         flex-direction: column-reverse;
         @include breakpoint(medium) {
             flex-direction: row;
