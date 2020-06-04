@@ -1,6 +1,6 @@
-@import '@/assets/scss/_colors.scss';
-@import '@/assets/scss/_breakpoints.scss';
-@import '@/assets/scss/_fonts.scss';
+@import '@/styles/_colors.scss';
+@import '@/styles/_breakpoints.scss';
+@import '@/styles/_fonts.scss';
 
 * {
     margin: 0;
@@ -22,13 +22,8 @@ body {
     font-weight: 300;
 }
 
-body {
-    // font-size: 62.5%;
-    font-size: 8px !important;
-}
-
-@media only screen and ( min-width : 768px ){
-  body { font-size: 10px !important; }
+html {
+    font-size: 62.5%;
 }
 
 #app {
@@ -37,26 +32,20 @@ body {
 }
 
 .container {
+  // position: relative;
+  // overflow: hidden;
+  // width: 100%;
+  // min-height: 100vh;
+  // padding: 8rem;
+  // background-color: #fff;
 }
 
 .section {
-  width: 100%;
-  max-width: 1200px;
-  min-height: 100vh;
-  margin:0 auto;
-  padding-top: 60px;
-  overflow: hidden;
-}
-.align-center {
-  display: flex;
-  align-items: center;
-}
-.flex-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-.flex-item {
-  padding: 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 8rem;
+  overflow: hidden;
 }
